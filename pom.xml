@@ -11,12 +11,19 @@
     <modules>
         <module>MapsDemo</module>
         <module>comm</module>
+        <module>innerclass</module>
+        <module>string</module>
     </modules>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
         </dependency>
     </dependencies>
 

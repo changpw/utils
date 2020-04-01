@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="comm" />
+        <module name="innerclass" />
         <module name="MapsDemo" />
+        <module name="string" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
