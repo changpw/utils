@@ -57,7 +57,7 @@ public class StringTest {
 //        Thread a = new Thread(myThread, "A");
 //        Thread b = new Thread(myThread, "B");
 //        Thread c = new Thread(myThread, "C");
-        for (int i =0 ; i<100;i++){
+        for (int i =0 ; i<99;i++){
             MyThread myThread = new MyThread();
             Thread a = new Thread(myThread, "A"+i);
             a.start();
