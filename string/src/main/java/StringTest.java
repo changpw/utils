@@ -36,23 +36,35 @@ public class StringTest {
 //        System.out.println(person.toString());
 //        System.out.println(clone.toString());
 //
-         String [] stringArray ={"1","200","153","8"};
-         stringArray= new String[0] ;
+//         String [] stringArray ={"1","200","153","8"};
+//         stringArray= new String[0] ;
 //        Arrays.sort(stringArray,(String s1,String s2)->  Integer.parseInt(s1)-(Integer.parseInt(s2)));
 //        System.out.println(Arrays.toString(stringArray));
-        String s ;
-        try {
-             s = stringArray[0];
-            if(stringArray.length>0){
-                throw new MyException("数组长度大于0");
-            }else if (stringArray.length==0){
-                throw new RuntimeException("数组长度等于0");
-            }
-        }catch (MyException e){
-            System.out.println("length > 0"+e.getMessage());
-        }catch (IndexOutOfBoundsException e){
-            System.out.println("IndexOutOfBoundsException"+e.getMessage());
+//        String s ;
+//        try {
+//             s = stringArray[0];
+//            if(stringArray.length>0){
+//                throw new MyException("数组长度大于0");
+//            }else if (stringArray.length==0){
+//                throw new RuntimeException("数组长度等于0");
+//            }
+//        }catch (MyException e){
+//            System.out.println("length > 0"+e.getMessage());
+//        }catch (IndexOutOfBoundsException e){
+//            System.out.println("IndexOutOfBoundsException"+e.getMessage());
+//        }
+//        MyThread myThread = new MyThread();
+//        Thread a = new Thread(myThread, "A");
+//        Thread b = new Thread(myThread, "B");
+//        Thread c = new Thread(myThread, "C");
+        for (int i =0 ; i<100;i++){
+            MyThread myThread = new MyThread();
+            Thread a = new Thread(myThread, "A"+i);
+            a.start();
         }
+//        a.start();
+//        b.start();
+//        c.start();
 
 
     }
