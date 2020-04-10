@@ -23,11 +23,13 @@ public class Person implements Cloneable{
     }
 
     static enum SingletonEnum{
-        INSTANCE;
+        INSTANCE(1);
         private Person person;
-
-        private SingletonEnum() {
+        private int id;
+        private SingletonEnum(int id) {
             person=new Person();
+            this.id=id+1;
+            System.out.println(id);
         }
         public Person getPersonInstance(){
             return person;

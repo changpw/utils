@@ -1,13 +1,14 @@
+import com.alibaba.fastjson.JSONObject;
 import com.cpw.entry.Person;
 import com.cpw.exception.MyException;
 
 import java.lang.reflect.Array;
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Date;
+import java.util.*;
 
 public class StringTest {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws java.lang.Exception {
+
 //         String 是不可变对象
 //        String str = "1232235";
 //      不可变对象的解决方法
@@ -40,33 +41,64 @@ public class StringTest {
 //         stringArray= new String[0] ;
 //        Arrays.sort(stringArray,(String s1,String s2)->  Integer.parseInt(s1)-(Integer.parseInt(s2)));
 //        System.out.println(Arrays.toString(stringArray));
+//
 //        String s ;
+//
 //        try {
-//             s = stringArray[0];
-//            if(stringArray.length>0){
-//                throw new MyException("数组长度大于0");
-//            }else if (stringArray.length==0){
-//                throw new RuntimeException("数组长度等于0");
-//            }
+//           Exception exception = new Exception();
+//           exception.getException();
 //        }catch (MyException e){
-//            System.out.println("length > 0"+e.getMessage());
+////            System.out.println("length > 0"+e.getMessage());
+//            throw new Exception(e);
 //        }catch (IndexOutOfBoundsException e){
 //            System.out.println("IndexOutOfBoundsException"+e.getMessage());
 //        }
-//        MyThread myThread = new MyThread();
+////        MyThread myThread = new MyThread();
 //        Thread a = new Thread(myThread, "A");
 //        Thread b = new Thread(myThread, "B");
 //        Thread c = new Thread(myThread, "C");
-        for (int i =0 ; i<99;i++){
-            MyThread myThread = new MyThread();
-            Thread a = new Thread(myThread, "A"+i);
-            a.start();
-        }
+//        for (int i =0 ; i<99;i++){
+//            MyThread myThread = new MyThread();
+//            Thread a = new Thread(myThread, "A"+i);
+//            a.start();
+//        }
 //        a.start();
 //        b.start();
 //        c.start();
+//        new StringTest().getStaticValue();
+//
+//    }
+//    public static void  getStaticValue(){
+//         int age = 11;
+//        id=1;
+//        System.out.println(id
+//        HashMap<String, List<Map<String, Object>>> stringListHashMap = new HashMap<>();
+//        ArrayList<Map<String, Object>> maps = new ArrayList<>();
+//        HashMap<String, Object> stringObjectHashMap1 = new HashMap<>();
+//        stringObjectHashMap1.put("String","yupt");
+//        maps.add(stringObjectHashMap1);
+//        stringListHashMap.put("loop",maps);
+//        HashMap<String, Object> stringObjectHashMap = new HashMap<>();
+//        stringObjectHashMap.put("loop",stringListHashMap);
+//        Map<String, List<Map<String, Object>>> loop = (Map<String, List<Map<String, Object>>>) stringObjectHashMap.get("loop");
+//        System.out.println(loop.toString());
+//        try {
+//            throw  new Exception("kkkkk");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
 
+        try {
+            new Exception().getException();
 
+        } catch (MyException e){
+                System.out.println("hello MyException _catch");
+                throw new java.lang.Exception(e);
+        } catch (java.lang.Exception e) {
+            System.out.println("catch Exception");
+            throw new java.lang.Exception(e);
+        }
     }
 
 }
