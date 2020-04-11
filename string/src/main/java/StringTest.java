@@ -1,7 +1,9 @@
 import com.alibaba.fastjson.JSONObject;
 import com.cpw.entry.Person;
 import com.cpw.exception.MyException;
+import lombok.ToString;
 
+import java.io.*;
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.*;
@@ -53,15 +55,15 @@ public class StringTest {
 //        }catch (IndexOutOfBoundsException e){
 //            System.out.println("IndexOutOfBoundsException"+e.getMessage());
 //        }
-////        MyThread myThread = new MyThread();
+//        MyThread myThread = new MyThread();
 //        Thread a = new Thread(myThread, "A");
 //        Thread b = new Thread(myThread, "B");
 //        Thread c = new Thread(myThread, "C");
-//        for (int i =0 ; i<99;i++){
-//            MyThread myThread = new MyThread();
-//            Thread a = new Thread(myThread, "A"+i);
-//            a.start();
-//        }
+        for (int i =0 ; i<99;i++){
+            MyThread myThread = new MyThread();
+            Thread a = new Thread(myThread, "A"+i);
+            a.start();
+        }
 //        a.start();
 //        b.start();
 //        c.start();
@@ -89,16 +91,63 @@ public class StringTest {
 //        }
 //
 
-        try {
-            new Exception().getException();
+//        try {
+//            new Exception().getException();
+//
+//        } catch (MyException e){
+//                System.out.println("hello MyException _catch");
+//                throw new java.lang.Exception(e);
+//        } catch (java.lang.Exception e) {
+//            System.out.println("catch Exception");
+//            throw new java.lang.Exception(e);
+//        }
+        Person.JACK.getAge();
+        Person.TOM.getAge();
+        Person.Rose.getAge();
+        for (Person person:
+             Person.values()) {
+            System.out.println(person.ToString());
+        }
+//        File file = new File("E:\\demo\\string\\src\\main\\resources\\application.properties");
+//        FileInputStream fileInputStream = new FileInputStream(file);
+//        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+//        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+//        String s = "" ;
+//        while ((s=bufferedReader.readLine())!=null){
+////            System.out.println(s);
+//            String[] split = s.split(";");
+//            for (String str:
+//                 split) {
+//                String[] split1 = str.split("=");
+//                if(split1[0].equals("port")){
+//                    System.out.println(split1[1]);
+//                }
+//            }
+//
+//        }
+//        fileInputStream.close();
+    }
 
-        } catch (MyException e){
-                System.out.println("hello MyException _catch");
-                throw new java.lang.Exception(e);
-        } catch (java.lang.Exception e) {
-            System.out.println("catch Exception");
-            throw new java.lang.Exception(e);
+    enum Person{
+        JACK{
+            public void getAge(){
+                System.out.println("Jack is 18");
+            }
+        },
+        Rose,
+        TOM{
+            public void getAge(){
+                System.out.println("Tom is 20");
+            }
+        };
+        public void getAge(){
+            System.out.println("SomeOne is not defined age");
+        }
+        public String ToString(){
+            return ordinal()+"\tis\t"+name();
         }
     }
+
+
 
 }
