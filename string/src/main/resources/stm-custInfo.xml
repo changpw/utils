@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--客户信息相关配置     filter-auth.xml--><package name="stm" namespace="custInfo" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--新建客户信息 B1111 -->
+	<service name="devcreateCustInfo" class="service.stm.custInfo.CustInfoManager" method="createCustInfo">
+	</service>
+	
+	<!--客户一般信息修改  B1113 -->
+	<service name="devmodifyCustInfo" class="service.stm.custInfo.CustInfoManager" method="modifyCustInfo">
+	</service>
+	
+	<!--客户信息查询 B4202 -->
+	<service name="devqueryCustInfo" class="service.stm.custInfo.CustInfoManager" method="queryCustInfo">
+	</service>
+	
+	<!--客户签约信息查询 Q0004-->
+	<service name="devquerySignInfo" class="service.stm.custInfo.CustInfoManager" method="querySignInfo">
+	</service>
+	
+	<!--账户信息查询 F2001-->
+	<service name="devacctInfoQuery" class="service.stm.custInfo.CustInfoManager" method="acctInfoQuery">
+	</service>
+	
+	<!--客户账户信息查询 F2003-->
+	<service name="devcustAcctInfoQuery" class="service.stm.custInfo.CustInfoManager" method="custAcctInfoQuery">
+	</service>
+	
+	<!--根据证件号码查询客户账户信息查询 F2003-->
+	<service name="devcustAcctInfoListByIdNo" class="service.stm.custInfo.CustInfoManager" method="custAcctInfoListByIdNo">
+	</service>
+	
+	<!--渠道综合通过手机号查询是否被占用 Q0038-->
+	<service name="devcustCellPhoneExitsQuery" class="service.stm.custInfo.CustInfoManager" method="custCellPhoneExitsQuery">
+	</service>
+	
+	<!--账户信息查询D6201-->
+	<service name="devqueryAcctInfo" class="service.stm.custInfo.CustInfoManager" method="queryAcctInfo">
+	</service>
+	
+	<!-- 筛选Ⅰ类卡 ，一类户下拉选框
+	 * 根据证件类型、证件号，查询客户号-->
+	<service name="devcustAcctScreen" class="service.stm.custInfo.CustInfoManager" method="custAcctScreen">
+	</service>
+	<!--对公客户信息查询B1214-->
+	<service name="devqueryCorpcustInfo" class="service.stm.custInfo.CustInfoManager" method="queryCorpcustInfo">
+	</service>
+	
+	<!--B2913账户明细查询-->
+	<service name="devqueryAcctDetail" class="service.stm.custInfo.CustInfoManager" method="queryAcctDetail">
+	</service>
+	
+	<!--B2930客户账户户主查询-->
+	<service name="devacctHouseholderQuery" class="service.stm.custInfo.CustInfoManager" method="acctHouseholderQuery">
+	</service>
+	
+	
+	<!--根据账号进行客户账户户主查询-->
+	<service name="devaccountHolder" class="service.stm.custInfo.CustInfoManager" method="accountHolder">
+	</service>
+	
+	<!--B2202 本账户外币冻结-->
+	<service name="devexchangeAcctFro" class="service.stm.custInfo.CustInfoManager" method="exchangeAcctFro">
+	</service>
+	
+	<!-- 储蓄账户冻结 -->
+	<service name="devtraditionAcctFro" class="service.stm.custInfo.CustInfoManager" method="traditionAcctFro">
+	</service>
+	<!-- 开立存款证明 -->
+	<service name="devopenCertificate" class="service.stm.depositProof.DepositProofService" method="openCertificate">
+	</service>
+	<!-- 修改账户对应客户 -->
+	<service name="devchangeCustNo" class="service.stm.custInfo.CustInfoManager" method="changeCustNo">
+	</service>
+	
+	<!-- 吞卡数据插入 -->
+	<service name="devretainCard" class="service.stm.custInfo.CustInfoManager" method="retainCard">
+	</service>
+	<!-- 吞卡数据查询 -->
+	<service name="devcardQuery" class="service.stm.custInfo.CustInfoManager" method="cardQuery">
+	</service>
+</package>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设备登录相关配置 --><package name="stm" namespace="bankingAndSecurities" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--账户升降级-->
+	
+	<!--银行转证券-->
+	<service name="devbankingAndSecurities" class="service.stm.bankingAndSecurities.BankingSecuritiesService" method="bankingAndSecurities"/>
+
+	<!--证券转银行-->
+	<service name="devsecuritiesAndBanking" class="service.stm.bankingAndSecurities.BankingSecuritiesService" method="securitiesAndBanking"/>
+	<!--获得证券公司名称-->
+	<service name="devgetTicketName" class="service.stm.bankingAndSecurities.BankingSecuritiesService" method="getTicketName"/>
+	
+	<!--获得三方签约查询-->
+	<service name="devthreePartyQuery" class="service.stm.bankingAndSecurities.BankingSecuritiesService" method="threePartyQuery"/>
+	
+	<!--获得三方签约查询-->
+	<service name="devgetBanlance" class="service.stm.bankingAndSecurities.BankingSecuritiesService" method="getBanlance"/>
+	
+</package>

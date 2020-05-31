@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设备登录相关配置 --><package name="stm" namespace="login" extends="filter-base.xml,filter-serial.xml">
+	<!--设备登录-->
+	<service name="devlogin" class="service.stm.login.LoginService" method="login">
+	</service>
+
+	<!--获取工作主密钥-->
+	<service name="devgetTMK" class="service.stm.login.KeyManagerService" method="getTmk">
+	</service>
+	
+	<!--获取国际工作主密钥-->
+	<service name="devgetInterTmk" class="service.stm.login.KeyManagerService" method="getInterTmk">
+	</service>
+
+	<!--获取工作密钥pik-->
+	<service name="devgetPik" class="service.stm.login.KeyManagerService" method="getPik">
+	</service>
+
+	<!--获取国际工作密钥pik-->
+	<service name="devgetInterPik" class="service.stm.login.KeyManagerService" method="getInterPik">
+	</service>
+	
+	<!--获取Mak-->
+	<service name="devgetMak" class="service.stm.login.KeyManagerService" method="getMak">
+	</service>
+	
+	<!--获取国际密钥mak-->
+	<service name="devgetInterMak" class="service.stm.login.KeyManagerService" method="getInterMak">
+	</service>
+	
+	<!--获取Mak-->
+	<service name="devtest" class="service.stm.login.KeyManagerService" method="test">
+	</service>
+	
+	<!--建立长连接-->
+	<service name="devstmSocket" class="service.stm.webSocket.WebSocketService" method="execute">
+	</service>
+	
+	<!--STM推送消息-->	
+	<service name="devpushInfo" class="service.stm.webSocket.WebSocketService" method="pushInfo">
+	</service>
+	
+	<!--客户端更新文件传输状态-->	
+	<service name="devupdateFileStatus" class="service.stm.webSocket.WebSocketService" method="updateFileStatus">
+	</service>
+</package>

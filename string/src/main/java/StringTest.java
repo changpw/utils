@@ -2,7 +2,11 @@ import com.alibaba.fastjson.JSONObject;
 import com.cpw.entry.Person;
 import com.cpw.exception.MyException;
 import lombok.ToString;
+import org.dom4j.*;
+import org.dom4j.io.SAXReader;
+import org.dom4j.io.XMLWriter;
 
+import javax.xml.transform.Source;
 import java.io.*;
 import java.lang.reflect.Array;
 import java.time.LocalDate;
@@ -10,7 +14,9 @@ import java.util.*;
 
 public class StringTest {
     public static void main(String[] args) throws java.lang.Exception {
-
+        readXMLFiles();
+//        changeXMLPropertise();
+        System.out.println("Hello");
 //         String 是不可变对象
 //        String str = "1232235";
 //      不可变对象的解决方法
@@ -50,20 +56,23 @@ public class StringTest {
 //           Exception exception = new Exception();
 //           exception.getException();
 //        }catch (MyException e){
-////            System.out.println("length > 0"+e.getMessage());
-//            throw new Exception(e);
+//            System.out.println("length > 0"+e.getMessage());
+//            throw new MyException(e.getMessage(),e);
+////            throw new java.lang.Exception(e);
 //        }catch (IndexOutOfBoundsException e){
 //            System.out.println("IndexOutOfBoundsException"+e.getMessage());
+//        }catch (java.lang.Exception e){
+//            System.out.println("Exception"+e.getMessage());
 //        }
-//        MyThread myThread = new MyThread();
+//        MyThread myThread = new MyThr ead();
 //        Thread a = new Thread(myThread, "A");
 //        Thread b = new Thread(myThread, "B");
 //        Thread c = new Thread(myThread, "C");
-        for (int i =0 ; i<99;i++){
-            MyThread myThread = new MyThread();
-            Thread a = new Thread(myThread, "A"+i);
-            a.start();
-        }
+//        for (int i =0 ; i<99;i++){
+//            MyThread myThread = new MyThread();
+//            Thread a = new Thread(myThread, "A"+i);
+//            a.start();
+//        }
 //        a.start();
 //        b.start();
 //        c.start();
@@ -101,13 +110,13 @@ public class StringTest {
 //            System.out.println("catch Exception");
 //            throw new java.lang.Exception(e);
 //        }
-        Person.JACK.getAge();
-        Person.TOM.getAge();
-        Person.Rose.getAge();
-        for (Person person:
-             Person.values()) {
-            System.out.println(person.ToString());
-        }
+//        Person.JACK.getAge();
+//        Person.TOM.getAge();
+//        Person.Rose.getAge();
+//        for (Person person:
+//             Person.values()) {
+//            System.out.println(person.ToString());
+//        }
 //        File file = new File("E:\\demo\\string\\src\\main\\resources\\application.properties");
 //        FileInputStream fileInputStream = new FileInputStream(file);
 //        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
@@ -126,27 +135,73 @@ public class StringTest {
 //
 //        }
 //        fileInputStream.close();
+//        String path="";
+//        System.out.println(path.lastIndexOf("/"));
+//        String name=path.substring(path.lastIndexOf("/"));
+//        System.out.println(name);
     }
+//    enum Person{
+//        JACK{
+//            public void getAge(){
+//                System.out.println("Jack is 18");
+//            }
+//        },
+//        Rose,
+//        TOM{
+//            public void getAge(){
+//                System.out.println("Tom is 20");
+//            }
+//        };
+//        public void getAge(){
+//            System.out.println("SomeOne is not defined age");
+//        }
+//        public String ToString(){
+//            return ordinal()+"\tis\t"+name();
+//        }
+//    }
+        public static  void  readXMLFiles(){
+            File file = new File("E:\\demo\\string\\src\\main\\resources");
+            String[] fileNames = file.list();
+            for(String fileName : fileNames){
+                System.out.println(fileName);
+                if(fileName.indexOf("stm") !=-1){
+                    System.out.println("stm-->"+fileName);
+                    changeXMLPropertise(fileName);
 
-    enum Person{
-        JACK{
-            public void getAge(){
-                System.out.println("Jack is 18");
+                }else {
+                    System.out.println(fileName);
+                }
             }
-        },
-        Rose,
-        TOM{
-            public void getAge(){
-                System.out.println("Tom is 20");
+
+
+        }
+        public static  void  changeXMLPropertise(String fileName){
+
+            SAXReader saxReader = new SAXReader();
+            try {
+                Document read = saxReader.read(new File("E:\\demo\\string\\src\\main\\resources\\"+fileName));
+                Element rootElement = read.getRootElement();
+                List service = rootElement.elements("service");
+                Iterator iterator = service.iterator();
+                while (iterator.hasNext()){
+                    Element next = (Element) iterator.next();
+                    String name = next.attribute("name").getText();
+                    next.attribute("name").setText("dev"+name);
+                    System.out.println(next.attribute("name").getText());
+                    try {
+                        XMLWriter xmlWriter = new XMLWriter(new FileWriter("E:\\demo\\string\\src\\main\\resources\\"+fileName));
+                        xmlWriter.write(read);
+                        xmlWriter.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            } catch (DocumentException e) {
+                e.printStackTrace();
             }
-        };
-        public void getAge(){
-            System.out.println("SomeOne is not defined age");
         }
-        public String ToString(){
-            return ordinal()+"\tis\t"+name();
-        }
-    }
+
+
 
 
 

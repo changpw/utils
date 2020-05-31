@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="stmbillInfo" extends="filter-base.xml,filter-verify.xml">
+	<!-- 退票签收 -->
+	<service name="devrefundConfirm" class="service.manage.stm.corporatebank.RefundBillInfo" method="refundConfirm">
+	</service>
+	
+	<!-- 清机 -->
+	<service name="devdeviceClean" class="service.manage.stm.corporatebank.StmBillClean" method="deviceClean">
+	</service>
+</package>

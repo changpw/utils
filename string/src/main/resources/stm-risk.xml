@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="risk" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--问卷调查-->
+	<service name="devsurvey" class="service.stm.risk.SurveyService" method="survey">
+	</service>
+	<!--风险评估-->
+	<service name="devassessment" class="service.stm.risk.SurveyService" method="assessment">
+	</service>
+
+	<!--客户风险等级查询 100375 -->
+	<service name="devCustomerRiskQuery" class="service.stm.risk.SurveyService" method="CustomerRiskQuery">
+	</service>
+	
+	<!--客户风险等级修改 -->
+	<service name="devCustomerRiskUpdate" class="service.stm.risk.SurveyService" method="CustomerRiskUpdate">
+	</service>
+	
+	<!--客户风险评估 -->
+	<service name="devassessment2" class="service.stm.risk.SurveyService" method="assessment2"/>
+</package>

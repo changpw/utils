@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="old" extends="filter-base.xml,filter-serial.xml">
+	<!--旧户领卡（核心）-->
+	<service name="devOldHouseholdCard" class="service.stm.oldHouseholdCard.OldHouseholdCardService" method="OldHouseholdCard"/>
+	
+	<!--旧户领卡（IC卡平台）-->
+	<service name="devICHoldCard" class="service.stm.oldHouseholdCard.OldHouseholdCardService" method="ICHoldCard"/>
+	<!--查询旧户领卡（IC卡平台）-->
+	<service name="devselect" class="service.stm.oldHouseholdCard.OldHouseholdCardService" method="select"/>
+	
+</package>

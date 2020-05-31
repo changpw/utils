@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="splitting" extends="filter-base.xml,filter-serial.xml">
+
+	<!-- 分户帐基本项查询-->
+	<service name="devquerySplitAcct" class="service.stm.corporateBusiness.SplitAcctService" method="querySplitAcct">
+	</service>
+	<!-- 账号基本信息查询-->
+	<service name="devqueryAccNoInfo" class="service.stm.corporateBusiness.AccNoInfo" method="queryAccNoInfo">
+	</service>
+	
+	<!-- 冻结登记簿查询-->
+	<service name="devqueryAccNoFreeze" class="service.stm.corporateBusiness.AccNoInfo" method="queryAccNoFreeze">
+	</service>
+</package>

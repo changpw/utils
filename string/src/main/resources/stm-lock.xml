@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设备登录相关配置 --><package name="stm" namespace="lock" extends="filter-base.xml">
+
+	<!--STM锁屏-->	
+	<service name="devcheckLockStatus" class="service.manage.stm.device.DeviceinfoManage" method="checkLockStatus">
+	</service>
+	
+	<!--STM锁屏-->	
+	<service name="devmodLockStatus" class="service.manage.stm.device.DeviceinfoManage" method="modLockStatus">
+	</service>
+	
+	<!--STM锁屏-->	
+	<service name="devmodLockStatusManange" class="service.stm.lock.DeviceScreenLock" method="modLockStatusManange">
+	</service>
+</package>

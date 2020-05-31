@@ -1,0 +1,46 @@
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件-->
+<package name="man" namespace="download" extends="filter-base.xml,filter-verify.xml">
+	<!-- 下载清机数据 -->
+	<service name="exportCleanData" class="service.manage.stm.corporatebank.ExcelExport" method="exportCleanData">
+	</service>
+	<!-- 下载票据信息 -->
+	<service name="exportBillData" class="service.manage.stm.corporatebank.ExcelExport" method="exportBillData">
+	</service>
+	<!-- 下载退票信息 -->
+	<service name="exportRefundData" class="service.manage.stm.corporatebank.ExcelExport" method="exportRefundData">
+	</service>
+	<!-- 下载凭证使用情况 -->
+	<service name="exportVoucherSerial" class="service.manage.stm.serialQuery.VoucherSerial" method="exportVoucherSerial">
+	</service>
+	<!-- 下载展业凭证使用情况 -->
+	<service name="exportYDZYVoucherSerial" class="service.manage.stm.serialQuery.YdzyVoucherSerial" method="exportVoucherSerial">
+	</service>
+	<!-- 下载超柜交易数据汇总 -->
+	<service name="exportSearilCount" class="service.manage.stm.serialQuery.SearilCount" method="exportSearilCount">
+	</service>
+	<!-- 下载超柜交易子流水-->
+	<service name="exportSubSerial" class="service.manage.stm.monitor.DeviceMonitorService" method="exportSubSerial">
+	</service>
+	<!-- 下载超柜旧挂失登记簿-->
+	<service name="exportLossSerial" class="service.manage.stm.serialQuery.LossSerial" method="exportLossSerial">
+	</service>
+	<!-- 下载超柜新挂失登记簿-->
+	<service name="exportNewLossSerial" class="service.manage.stm.serialQuery.NewLossSerial" method="exportNewLossSerial">
+	</service>
+	<!-- 下载流水统计数据-->
+	<service name="exportSerialCount" class="service.manage.stm.serialQuery.SerialCountQuery" method="exportSerialCount">
+	</service>
+	<!-- 下载柜员审核业务-->
+	<service name="exportDepositors" class="service.manage.stm.serialQuery.SerialDepositorsQuery" method="exportDepositors">
+	</service>
+	<!-- 下载流水统计数据-->
+	<service name="exportSignCount" class="service.manage.stm.serialQuery.SignCountQuery" method="exportSignCount">
+	</service>
+	<!-- 下载设备监控信息-->
+	<service name="exportStmMonitor" class="service.manage.stm.monitor.DeviceMonitorService" method="exportStmMonitor">
+	</service>
+	<service name="uploadFile" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="uploadFile">
+	</service>
+	<service name="exportYDZYSearilCount" class="service.manage.ydzy.serialQuery.SerialCountQuery" method="exportSearilCount">
+	</service>
+</package>

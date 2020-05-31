@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--超柜辅助功能接口相关配置  --><package name="stm" namespace="assist" extends="filter-base.xml,filter-serial.xml">
+	<!--短信发送 -->
+	<service name="devsendMsg" class="service.stm.assist.AssistService" method="sendMsg">
+	</service>
+
+	<!--人脸识别
+	<service name="faceVerify"  class="service.stm.assist.AssistService" 
+		method="faceVerify">
+	</service>-->
+
+	<!-- 身份涉案核查-->
+	<service name="devidCardVerify" class="service.stm.assist.AssistService" method="idCardVerify">
+	</service>
+
+	<!-- 指纹授权 1009-->
+	<service name="devfingerprintImpower" class="service.stm.assist.AssistService" method="fingerprintImpower">
+	</service>
+	
+	<!--联网核查   LWHC01 -->
+	<service name="devOnlineVerification" class="service.stm.assist.AssistService" method="OnlineVerification">
+	</service>
+
+	<!--指纹授权前推送PAD -->
+	<service name="devPushForFinger" class="service.stm.assist.AssistService" method="PushForFinger">
+	</service>
+
+	<!--短信发送(直接发送) -->
+	<service name="devsendMsgStraight" class="service.stm.assist.AssistService" method="sendMsgStraight">
+	</service>
+	
+	
+	<!--活体检测 -->
+	<service name="devcheckLiveness" class="service.stm.assist.CheckLiveness" method="checkLiveness">
+	</service>
+	
+	<!-- 人脸识别-->
+	<service name="devfaceVerify" class="service.stm.assist.FaceVerify" method="faceVerify"/>
+</package>

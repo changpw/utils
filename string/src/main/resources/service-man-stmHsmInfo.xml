@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="stmHsmInfo" extends="filter-base.xml,filter-verify.xml">
+	
+	<!-- 添加加密机配置-->
+	<service name="devaddstmHsmInfo" class="service.manage.stm.ZMK.HsmService" method="addstmHsmInfo">
+	</service>
+	<!-- 修改加密机配置-->
+	<service name="deveditstmHsmInfo" class="service.manage.stm.ZMK.HsmService" method="editstmHsmInfo">
+	</service>
+	<!-- 删除加密机配置-->
+	<service name="devdelstmHsmInfo" class="service.manage.stm.ZMK.HsmService" method="delstmHsmInfo">
+	</service>
+	<!-- 查询加密机配置-->
+	<service name="devgetHsmIP" class="service.manage.stm.ZMK.HsmService" method="getHsmIP">
+	</service>
+	<!--测试zmk-->
+	<service name="devgetLMK" class="service.manage.stm.ZMK.GenAndPrintZMK" method="getLMK">
+	</service>
+	<!--测试zmk-->
+	<service name="devupdateHsmInfo" class="service.manage.stm.ZMK.HsmService" method="updateHsmInfo">
+	</service>
+</package>

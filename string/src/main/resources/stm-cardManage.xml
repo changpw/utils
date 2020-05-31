@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="cardManage" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+
+	<!-- 卡挂失 -->
+	<service name="devcardLost" class="service.stm.cardManage.CardChangeService" method="cardLost">
+	</service>
+	
+	<!-- 卡解挂 -->
+	<service name="devcardCancelLost" class="service.stm.cardManage.CardChangeService" method="cardCancelLost">
+	</service>
+	
+	<!--挂失换卡 -->
+	<service name="devcardChange" class="service.stm.cardManage.CardChangeService" method="cardChange">
+	</service>
+	
+	<!-- 客户收取手续费账号列表 -->
+	<service name="devfindLostAcctQuery" class="service.stm.cardManage.CardChangeService" method="findLostAcctQuery">
+	</service>
+	
+	<!-- 存单解挂 -->
+	<service name="devdepositLossCancelEpaper" class="service.stm.cardManage.BookCancelService" method="depositLossCancelEpaper">
+	</service>
+	
+	<!-- 存折解挂 -->
+	<service name="devbankBookLossCancelEpaper" class="service.stm.cardManage.BookCancelService" method="bankBookLossCancelEpaper">
+	</service>
+	
+	<!-- 定一本解挂 -->
+	<service name="devfixedAcctLossCancelEpaper" class="service.stm.cardManage.BookCancelService" method="fixedAcctLossCancelEpaper">
+	</service>
+	<!-- 卡解挂 -->
+	<service name="devcardCancelLostEpaper" class="service.stm.cardManage.BookCancelService" method="cardCancelLostEpaper">
+	</service>
+	<!-- 存折挂失 -->
+	<service name="devbankBookLossEpaper" class="service.stm.cardManage.BookLossService" method="bankBookLossEpaper">
+	</service>
+	
+	<!-- 定一本挂失 -->
+	<service name="devfixedAcctLossEpaper" class="service.stm.cardManage.BookLossService" method="fixedAcctLossEpaper">
+	</service>
+	<!-- 卡解挂 -->
+	<service name="devcardLostEpaper" class="service.stm.cardManage.BookLossService" method="cardLostEpaper">
+	</service>
+	<!-- 存单挂失 -->
+	<service name="devsingleLossReportEpaper" class="service.stm.cardManage.BookLossService" method="singleLossReportEpaper">
+	</service>
+	<!-- 书挂列表 -->
+	<service name="devfindLost" class="service.stm.cardManage.BookLossService" method="findLost"/>
+	<!-- 挂失登记簿查询 -->
+	<service name="devqueryLossBook" class="service.stm.cardManage.BookCancelService" method="queryLossBook"/>
+	<!--挂失换卡书面挂失-->
+	<service name="devcardLostInReissue" class="service.stm.cardManage.CardLostAndReissue" method="cardLostInReissue"/>
+	<!--挂失换卡换卡-->
+	<service name="devcardChangeInReissue" class="service.stm.cardManage.CardLostAndReissue" method="cardChangeInReissue"/>
+</package>

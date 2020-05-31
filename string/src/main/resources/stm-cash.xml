@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="cash" extends="filter-base.xml">
+	
+	<!-- 清机文件上传 -->	
+	<servcie name="uploadCashSerialFile" class="service.stm.cash.ClearCash" method="uploadCashSerialFile"/>
+	<!-- 清机文件上传 -->	
+	<servcie name="cashStaticstic" class="service.stm.cash.CashStatistics" method="cashStaticstic"/>
+	<servcie name="handleCashErr" class="service.stm.cash.CashStatistics" method="handleCashErr"/>
+	
+	<!-- 查询钞箱流水 -->
+	<service name="devqueryMoneyBox" class="service.stm.comm.CashBillService" method="queryMoneyBox"/>
+
+</package>

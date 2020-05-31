@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="centOperation" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+
+	<!--集中作业同城提出借推送交易-->
+	<service name="devsendMassage" class="service.stm.centOperation.CentOperationService" method="sendMassage">
+	</service>
+	<!--集中作业同城提出借撤销申请-->
+	<service name="devcancleApply" class="service.stm.centOperation.CentOperationService" method="cancleApply">
+	</service>
+	<!--集中作业提出现金取款推送-->
+	<service name="devsendMassageCash" class="service.stm.centOperation.CentOperationService" method="sendMassageCash">
+	</service>
+	<!--集中作业提出转账支票推送-->
+	<service name="devsendMassageTransfer" class="service.stm.centOperation.CentOperationService" method="sendMassageTransfer">
+	</service>
+	<!--集中作业同城提出查询交易-->
+	<service name="devsendQuery" class="service.stm.centOperation.CentOperationService" method="sendQuery">
+	</service>
+	<!--集中作业提出对账交易-->
+	<service name="devterminalNo" class="service.stm.centOperation.CentOperationService" method="terminalNo">
+	</service>
+	<!--客户取消吞票-->
+	<service name="devcancelTicket" class="service.stm.centOperation.CentOperationService" method="cancelTicket">
+	</service>
+	<!--集中作业提出转账支票查询-->
+	<service name="devqueryTransterStatus" class="service.stm.centOperation.CentOperationService" method="queryTransterStatus">
+	</service>
+	<!--同城票据业务受理单交易通知无纸化-->
+	<service name="devinformEPaper" class="service.stm.centOperation.InformService" method="informEPaper">
+	</service>
+	
+</package>

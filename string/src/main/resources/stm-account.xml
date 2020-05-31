@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设备登录相关配置 --><package name="stm" namespace="account" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--账户升降级-->
+	
+	<!--账户信息查询-->
+	<service name="devaccountQuery" class="service.stm.account.AccountLiftLevelService" method="accountQuery"/>
+
+	<!--账户升降级处理-->
+	<service name="devaccountUpAndDown" class="service.stm.account.AccountLiftLevelService" method="accountUpAndDown"/>
+	
+</package>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="stmmonitor" extends="filter-base.xml,filter-verify.xml">
+	<!-- 添加新设备后    插入   相关的设备模块信息     到   《 模块监控信息表》   -->
+	<service name="devinsertmodule" class="service.manage.stm.monitor.DeviceMonitor" method="insertmodule">
+	</service>
+	<!-- 删除设备后    删除   相关的 模块监控信息表   -->
+	<service name="devdeltmodule" class="service.manage.stm.monitor.DeviceMonitor" method="delmodule">
+	</service>
+	<!-- 设备模块有更改，跟新模块监控信息表   -->
+	<service name="devupdatemodule" class="service.manage.stm.monitor.DeviceMonitor" method="updatemodule">
+	</service>
+	
+	<!-- 获取所有设备   -->
+	<service name="devgetAllDevice" class="service.manage.stm.monitor.DeviceMonitorService" method="getAllDevice">
+	</service>
+	<!-- 获取所有交易名称   -->
+	<service name="devgetAllTradeName" class="service.manage.stm.monitor.DeviceMonitorService" method="getAllTradeName">
+	</service>
+	<!-- 获取设备信息   -->
+	<service name="devgetDeviceInfo" class="service.manage.stm.monitor.DeviceMonitorService" method="getDeviceInfo">
+	</service>
+	<!-- 获取设备型号   -->
+	<service name="devgetAllModel" class="service.manage.stm.monitor.DeviceMonitorService" method="getAllModel">
+	</service>
+	<!-- 获取所有设备   -->
+	<service name="devgetOnlineDevice" class="service.manage.stm.monitor.DeviceMonitorService" method="getOnlineDevice">
+	</service>
+	
+	
+</package>

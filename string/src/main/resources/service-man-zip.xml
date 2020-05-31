@@ -1,0 +1,9 @@
+<package name="service" namespace="zip" extends="filter-base.xml">
+	<!--压缩包解压 -->
+	<service name="decomZip" class="service.manage.stm.zip.ZipService" method="decomZip"></service>
+	<!--压缩包删除 -->
+	<service name="delZip" class="service.manage.stm.zip.ZipService" method="delZip"></service>
+	<!--查询ip地址 -->
+	<service name="ipQuery" class="service.manage.stm.zip.ZipService" method="ipQuery"></service>
+	
+</package>

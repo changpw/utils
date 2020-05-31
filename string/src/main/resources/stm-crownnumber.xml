@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--冠字号相关配置 --><package name="stm" namespace="crownNumber" extends="filter-base.xml,filter-serial.xml">
+	
+	<!--冠字号上传-->
+	<service name="devcrownNumberUpload" class="service.stm.crownNumber.CrownNumberService" method="crownNumberUpload">
+	</service>
+	
+
+</package>

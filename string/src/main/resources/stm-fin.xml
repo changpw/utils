@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="fin" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+
+	<!--理财客户可撤单列表查询-->
+	<service name="devfinWithdrawQuery" class="service.stm.fin.FinService" method="finWithdrawQuery">
+	</service>
+	
+	<!--理财 撤单-->
+	<service name="devfinWithdraw" class="service.stm.fin.FinCancelService" method="finWithdraw">
+	</service>
+	
+	<!--理财客户可赎回产品 查询 -->
+	<service name="devfinRedeemQuery" class="service.stm.fin.FinService" method="finRedeemQuery">
+	</service>
+	
+	<!--理财赎回 -->
+	<service name="devfinRedeem" class="service.stm.fin.FinCancelService" method="finRedeem">
+	</service>
+	
+	<!-- 理财购买 -->
+	<sevice name="finBuy" class="service.stm.fin.FinProductService" method="finBuy"/>
+	
+	<!--理财产品列表查询 -->
+	<service name="devfinProQueryList" class="service.stm.fin.FinProductService" method="finProQueryList"/>
+	
+	<!-- 历史净值查询 -->
+	<service name="devhisNetWorthQurey" class="service.stm.fin.HistoryNetWorthService" method="hisNetWorthQurey"/>
+	
+	<!-- 109307当前委托查询  -->
+	<servcie name="entrustQuery" class="service.stm.fin.FinProductService" method="entrustQuery"/>
+	
+	<!-- 理财产品额度查询 -->
+	<servcie name="proLimitQuery" class="service.stm.fin.FinProductService" method="proLimitQuery"/>
+	
+	<!-- 我的理财 -->
+	<servcie name="myFin" class="service.stm.fin.FinProductService" method="myFin"/>
+	<!-- 查询信息 -->
+	<servcie name="getRiskQuestion" class="service.stm.risk.RiskQuestionQuery" method="getRiskQuestion"/>
+	
+</package>

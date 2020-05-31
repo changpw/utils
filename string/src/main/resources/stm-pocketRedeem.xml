@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="pocketRedem" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	
+	
+	<!-- 宝类快速赎回 -->
+	<service name="devquickRedemption" class="service.stm.pocketRedem.PocketRedeemService" method="quickRedemption"/>
+	<!-- 宝类普通赎回 -->
+	<service name="devordinaryRedemption" class="service.stm.pocketRedem.PocketRedeemService" method="ordinaryRedemption"/>
+	<!-- 天天宝电子渠道查询 -->
+	<service name="devpocketQuery" class="service.stm.pocketRedem.PocketRedeemService" method="pocketQuery"/>
+	
+	
+</package>

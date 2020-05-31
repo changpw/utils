@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="deposit" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+
+	<!--卡分账户查询信息 -->
+	<service name="devselectUser" class="service.stm.deposit.UserCardService" method="selectUser"/>
+	
+	<!--卡内活期转定期 -->
+	<service name="devcurrentDepositToFixed" class="service.stm.deposit.DepositTransitionService" method="currentDepositToFixed"/>
+	
+	<!--卡内定期转活期 -->
+	<service name="devfixedDepositToCurrent" class="service.stm.deposit.DepositTransitionService" method="fixedDepositToCurrent"/>
+	
+	<!--利息试算 -->
+	<service name="devinterestCaculate" class="service.stm.deposit.DepositTransitionService" method="interestCaculate"/>
+</package>

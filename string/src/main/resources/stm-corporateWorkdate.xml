@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="corporateWorkdate" extends="filter-base.xml,filter-serial.xml">
+	<!-- 查询前一工作日 -->
+	<service name="devqueryWorkDay" class="service.stm.corporateBusiness.CorporateWorkdateService" method="queryWorkDay">
+	</service>
+</package>

@@ -1,0 +1,264 @@
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件-->
+<package name="service" namespace="query" >
+	<!-- 查询机构 -->
+	<service name="orgin" class="service.manage.orginfo.OrginfoService" 
+		method="getorginfo">
+	</service>
+	<!-- 角色信息查询 -->
+	<service name="foxrole" class="service.manage.foxrole.foxrole.Foxrole" 
+		method="getfoxrole">
+	</service>
+	<!-- 用户信息查询 -->
+	<service name="userinfo" class="service.manage.foxrole.userinfo.Userinfo" 
+		method="userinfo">
+	</service>
+	<!-- 查询设备型号交易 -->
+	<service name="getBrandInfo" class="service.manage.stm.device.BrandManage"
+			method="getBrandInfo">
+	</service>
+	<!-- 查询指定型号设备的外设 -->
+	<service name="getModelById" class="service.manage.stm.device.BrandManage"
+			method="getModelById">
+	</service>
+	<!-- 通过菜单ID查询配置 -->
+	<service name="getStmconfigByMenucode" class="service.manage.stm.param.BusiParamManage"
+			method="getStmconfigByMenucode">
+	</service>
+	<!-- 查询设备信息 -->
+	<service name="getDevinfoByparams" class="service.manage.stm.device.DeviceinfoManage"
+			method="getDevinfoByparams">
+	</service>
+	
+	
+	<!-- 设备监控 -->
+	<service name="queryshebeijiankong" class="service.manage.stm.monitor.DeviceMonitor" 
+		method="queryshebeijiankong">
+	</service>
+	<!-- 查询设备监控信息导出excel -->
+	<service name="downloadshebeijiankong" class="service.manage.stm.monitor.DeviceMonitor"
+		method="downloadshebeijiankong">
+	</service>
+	<!-- 查询设备预警信息 -->
+	<service name="querywarninginfo" class="service.manage.stm.monitor.DeviceMonitor"
+		method="querywarninginfo">
+	</service>
+	<!-- 下载设备当天预警信息 -->
+	<service name="downloadtodayinfo" class="service.manage.stm.monitor.DeviceMonitor"
+		method="downloadtodayinfo">
+	</service>
+	<!-- 下载设备历史预警信息 -->
+	<service name="downloadhistoryinfo" class="service.manage.stm.monitor.DeviceMonitor"
+		method="downloadhistoryinfo">
+	</service>
+    <!-- 查询设备模块信息 设备模块详情-->
+	<service name="querymoduleinfo" class="service.manage.stm.monitor.DeviceMonitor"
+		method="querymoduleinfo">
+	</service>
+	 <!-- 下载设备模块信息 设备模块详情 -->
+	<service name="downloadmoduleinfo" class="service.manage.stm.monitor.DeviceMonitor"
+		method="downloadmoduleinfo">
+	</service>
+	
+	<!-- 查询stm交易流水-->
+	<service name="queryStmSerialInfo" class="service.manage.stm.serialQuery.SerialQuery"
+			method="querySerialInfo">
+	</service>
+	<!-- 查询stm子交易流水-->
+	<service name="queryStmSerialInfoChild" class="service.manage.stm.serialQuery.SerialQuery"
+			method="queryStmSerialInfoChild">
+	</service>
+	<!-- 查询stm子交易流水-->
+	<service name="queryParaConfigInfo" class="service.manage.common.paraconfig.ParaConfig"
+			method="queryParaConfigInfo">
+	</service>
+	
+	<!-- 查询节目配置信息-->
+	<service name="queryProgramInfo" class="service.manage.screenDevManage.deviceInfo.ProgramConfig"
+			method="queryProgramConfigInfo">
+	</service>
+	<!-- 查询节目配置信息-->
+	<service name="queryScreenDevManage" class="service.manage.screenDevManage.deviceInfo.ScreenDevManage"
+			method="queryScreenDeviceInfo">
+	</service>
+	
+	<!-- 查询分屏配置信息-->
+	<service name="queryScreenInfo" class="service.manage.screenDevManage.deviceInfo.StmScreenInfo"
+			method="queryScreenInfo">
+	</service>
+	<!-- 根据设备ID查询分屏配置信息-->
+	<service name="queryScreenInfoByDiviceID" class="service.manage.screenDevManage.deviceInfo.StmScreenInfo"
+			method="queryScreenInfoByDiviceID">
+	</service>
+	<!-- 根据节目单号查询资源信息-->
+	<service name="getResourceInfoByProGramId" class="service.manage.screenDevManage.deviceInfo.ResourceInfo"
+			method="getResourceInfoByProGramId">
+	</service>
+	<!-- 根据节目单号查询资源信息-->
+	<service name="queryResourceInfoByProgramId" class="service.manage.screenDevManage.deviceInfo.ResourceInfo"
+			method="queryResourceInfoByProgramId">
+	</service>
+	<!-- 查询资源信息-->
+	<service name="queryResourceInfo" class="service.manage.screenDevManage.deviceInfo.ResourceInfo"
+			method="queryResourceInfo">
+	</service>
+	
+	
+	
+	<!-- 查询客户交易权限账号信息-->
+	<service name="queryAccountInfo" class="service.manage.stm.ywqxManage.AccountTradeManage"
+			method="queryAccountInfo">
+	</service>
+	<!-- 查询账号与交易映射信息-->
+	<service name="queryAccNoTradeMappingInfo" class="service.manage.stm.ywqxManage.AccNoTradeMapping"
+			method="queryAccNoTradeMappingInfo">
+	</service>
+	
+	<!-- 查询票据信息-->
+	<service name="getAllStmBillInfoForDT" class="service.manage.stm.corporatebank.StmBillInfo"
+			method="getAllStmBillInfoForDT">
+	</service>
+	<!-- 查询退票管理-->
+	<service name="getAllRefundBillInfoForDT" class="service.manage.stm.corporatebank.RefundBillInfo"
+			method="getAllRefundBillInfoForDT">
+	</service>
+	<!-- 查询票据清机管理-->
+	<service name="getAllstmBillCleanForDT" class="service.manage.stm.corporatebank.StmBillClean"
+			method="getAllstmBillCleanForDT">
+	</service>
+	<!-- 查询可被清机票据信息-->
+	<service name="getAllCanBeCleanForDT" class="service.manage.stm.corporatebank.StmBillInfo"
+			method="getAllCanBeCleanForDT">
+	</service>
+	
+	<!-- 查询机构权限-->
+	<service name="getAllstmBranchLimitForDT" class="service.manage.stm.corporatebank.StmBranchLimit"
+			method="getAllstmBranchLimitForDT">
+	</service>
+	
+	<!-- 查询常用收款行-->
+	<service name="getAllstmComebankForDT" class="service.manage.stm.param.StmComebank"
+			method="getAllstmComebankForDT">
+	</service>
+	<!-- 查询收款行-->
+	<service name="getAllstmbankForDT" class="service.manage.stm.param.StmComebank"
+			method="getAllstmbankForDT">
+	</service>
+	<!-- 查询现金流水-->
+	<service name="getAllcashSerialMainForDT" class="service.manage.stm.serialQuery.CashSerial"
+			method="getAllcashSerialMainForDT">
+	</service>
+	<service name="exportCashSerial" class="service.manage.stm.serialQuery.CashSerial"
+			method="exportCashSerial">
+	</service>
+	
+	<!-- 查询凭证使用流水-->
+	<service name="getAllVoucherSerialForDT" class="service.manage.stm.serialQuery.VoucherSerial"
+			method="getAllVoucherSerialForDT">
+	</service>
+	<!-- 查询现金子流水-->
+	<service name="getAllcashSubSerialForDT" class="service.manage.stm.serialQuery.CashSerial"
+			method="getAllcashSubSerialForDT">
+	</service>
+	
+	<!-- 查询现金流水-->
+	<service name="getAllcashSerialMainForDTBak" class="service.manage.stm.serialQuery.CashSerialBak"
+			method="getAllcashSerialMainForDT">
+	</service>
+	<service name="exportCashSerialBak" class="service.manage.stm.serialQuery.CashSerialBak"
+			method="exportCashSerial">
+	</service>
+	<service name="getAllcashSubSerialForDTBak" class="service.manage.stm.serialQuery.CashSerialBak"
+			method="getAllcashSubSerialForDT">
+	</service>
+	<!-- 查询加密机配置-->
+	<service name="getAllstmHsmInfoForDT" class="service.manage.stm.ZMK.HsmService"
+			method="getAllstmHsmInfoForDT">
+	</service>
+	<!-- 查询加密机配置-->
+	<service name="getDevHsmInfoByparams" class="service.manage.stm.ZMK.HsmService"
+			method="getDevHsmInfoByparams">
+	</service>
+		<!-- 查询签发机关-->
+	<service name="getAllstmIssuedNameForDT" class="service.manage.stm.param.IssuedNameManage"
+			method="getAllstmIssuedNameForDT">
+	</service>
+		<!-- 查询获客渠道-->
+	<service name="getAllCustomerChannelForDT" class="service.manage.stm.param.CustomerChannel"
+			method="getAllCustomerChannelForDT">
+	</service>
+	<!-- 查询pad凭证使用流水-->
+	<service name="getAllYDZYVoucherSerialForDT" class="service.manage.stm.serialQuery.YdzyVoucherSerial"
+			method="getAllYDZYVoucherSerialForDT">
+	</service>
+	<!-- 查询超柜交易数据汇总-->
+	<service name="getAllSearilCountForDT" class="service.manage.stm.serialQuery.SearilCount"
+			method="getAllSearilCountForDT">
+	</service>
+	<!-- 查询转账费率-->
+	<service name="queryChargeRate" class="service.manage.stm.param.ChargeRate"
+			method="queryChargeRate">
+	</service>
+	
+	<!-- 查询交易流水-->
+	<service name="queryTradeSerialInfo" class="service.manage.stm.monitor.DeviceMonitorService"
+			method="queryTradeSerialInfo">
+	</service>
+	<!-- 查询交易子流水-->
+	<service name="querySubSerialInfo" class="service.manage.stm.monitor.DeviceMonitorService"
+			method="querySubSerialInfo">
+	</service>
+	
+	<!-- 查询旧挂失数据-->
+	<service name="getAllLossSerial" class="service.manage.stm.serialQuery.LossSerial"
+			method="getAllLossSerial">
+	</service>
+	<!-- 查询新挂失数据-->
+	<service name="getAllNEWLossSerial" class="service.manage.stm.serialQuery.NewLossSerial"
+			method="getAllNEWLossSerial">
+	</service>
+	
+	<!-- 查询无纸化失败的数据-->
+	<service name="getAllPaperSerial" class="service.manage.stm.serialQuery.PaperQuery"
+			method="getAllPaperSerial">
+	</service>
+	
+	<!-- 查询流水统计数据-->
+	<service name="getAllSerial" class="service.manage.stm.serialQuery.SerialCountQuery"
+			method="getAllSerial">
+	</service>
+	<!-- 查询柜员审核业务-->
+	<service name="getAllDepositorsSerial" class="service.manage.stm.serialQuery.SerialDepositorsQuery"
+			method="getAllDepositorsSerial">
+	</service>
+	<!-- 查询日志文件路径-->
+	<service name="getAllFilePathQuery" class="service.manage.stm.serialQuery.FilePathQuery"
+			method="getAllFilePathQuery">
+	</service>
+	<!-- 查询签约统计数据-->
+	<service name="getAllSign" class="service.manage.stm.serialQuery.SignCountQuery"
+			method="getAllSign">
+	</service>
+	<!-- 查询社保制卡机维护-->
+	<service name="getAllStmDeviceinfoSocialForDT" class="service.manage.stm.device.StmDeviceinfoSocial"
+			method="getAllStmDeviceinfoSocialForDT">
+	</service>
+	<!-- 查询社保制卡机维护-->
+	<service name="getAllSocialCardForDT" class="service.manage.stm.serialQuery.SocialCardQuery"
+			method="querySocialInfo">
+	</service>
+	<!-- 查询解挂登记簿-->
+	<service name="getAllLossCancel" class="service.manage.stm.serialQuery.LossCancelSerial"
+			method="getAllLossCancelSerial">
+	</service>
+		<!-- 查询风险评估问卷配置-->
+	<service name="getAllStmRiskQuestionForDT" class="service.manage.stm.param.StmRiskQuestion"
+			method="getAllStmRiskQuestionForDT">
+	</service>
+		<service name="getAllStmRiskAnswerForDT" class="service.manage.stm.param.StmRiskAnswer"
+			method="getAllStmRiskAnswerForDT">
+	</service>
+	<service name="deviceScreenLockQuery" class="service.stm.lock.DeviceScreenLock" method="deviceScreenLockQuery">
+	</service>
+	<service name="getAllZYSerialCount" class="service.manage.ydzy.serialQuery.SerialCountQuery" method="getAllSerial">
+	</service>
+</package>

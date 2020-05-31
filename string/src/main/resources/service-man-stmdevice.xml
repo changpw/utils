@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="devicestm" extends="filter-base.xml,filter-verify.xml">
+	<!-- 增加设备型号交易 -->
+	<service name="devaddBrand" class="service.manage.stm.device.BrandManage" method="add">
+	</service>
+	<!-- 修改设备型号交易 -->
+	<service name="devmodifyBrand" class="service.manage.stm.device.BrandManage" method="modify">
+	</service>
+	<!-- 删除设备型号交易 -->
+	<service name="devdelBrand" class="service.manage.stm.device.BrandManage" method="del">
+	</service>
+
+	<!-- 增加指定型号设备的外设交易 -->
+	<service name="devaddModel" class="service.manage.stm.device.BrandManage" method="addModel">
+	</service>
+	<!-- 修改指定型号设备的外设交易 -->
+	<service name="devmodifyModel" class="service.manage.stm.device.BrandManage" method="modifyModel">
+	</service>
+	<!-- 删除指定型号设备的外设交易 -->
+	<service name="devdelModel" class="service.manage.stm.device.BrandManage" method="delModel">
+	</service>
+	
+	<!-- 查询设备类型用于选择框 -->
+	<service name="devqueryBrandInfoForSelect" class="service.manage.stm.device.BrandManage" method="queryBrandInfoForSelect">
+	</service>
+
+	<!-- 增加设备交易 -->
+	<service name="devadd" class="service.manage.stm.device.DeviceinfoManage" method="add">
+	</service>
+	<!-- 修改设备交易 -->
+	<service name="devmodify" class="service.manage.stm.device.DeviceinfoManage" method="modify">
+	</service>
+	<!-- 删除设备交易 -->
+	<service name="devdel" class="service.manage.stm.device.DeviceinfoManage" method="del">
+	</service>
+	<!-- 修改设备交易场次 -->
+	<service name="devmodifyTradeSession" class="service.manage.stm.device.DeviceinfoManage" method="modifyTradeSession">
+	</service>
+	<!-- 修改设备清机状态 -->
+	<service name="devchangeCleanStatus" class="service.manage.stm.device.DeviceinfoManage" method="changeCleanStatus">
+	</service>
+	<!-- 修改设备清机状态 -->
+	<service name="devuploadAgentLog" class="service.stm.webSocket.WebSocketService" method="pushInfo">
+	</service>
+	<!-- 获取当前心跳所在IP -->
+	<service name="devgetRequestIpById" class="service.manage.stm.device.DeviceinfoManage" method="getRequestIpById">
+	</service>
+	<!-- 修改零钞钞箱 -->
+	<service name="devzeroBills" class="service.manage.stm.device.DeviceinfoManage" method="zeroBills">
+	</service>
+	
+	<!-- 添加社保制卡机维护-->
+	<service name="devaddStmDeviceinfoSocial" class="service.manage.stm.device.StmDeviceinfoSocial" method="addStmDeviceinfoSocial">
+	</service>
+	<!-- 修改社保制卡机维护-->
+	<service name="deveditStmDeviceinfoSocial" class="service.manage.stm.device.StmDeviceinfoSocial" method="editStmDeviceinfoSocial">
+	</service>
+	<!-- 删除社保制卡机维护-->
+	<service name="devdelStmDeviceinfoSocial" class="service.manage.stm.device.StmDeviceinfoSocial" method="delStmDeviceinfoSocial">
+	</service>
+	<!-- 更新社保制卡机绑定-->
+	<service name="devupdateSocial" class="service.manage.stm.device.DeviceinfoManage" method="updateSocial">
+	</service>
+</package>

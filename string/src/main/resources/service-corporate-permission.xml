@@ -1,0 +1,23 @@
+<package name="corporate" namespace="permission" extends="filter-base.xml,filter-auth.xml,filter-verify.xml">
+	<!-- 查询客户交易权限-->
+	<service name="queryCustomerPermission" class="service.manage.corporatebank.CustomerPermission"
+			method="queryCustomerPermission">
+	</service>
+	<!-- 修改和删除客户交易权限-->
+	<service name="updateCustomerPermission" class="service.manage.corporatebank.CustomerPermission"
+			method="updateCustomerPermission">
+	</service>
+	<!-- 新增客户交易权限-->
+	<service name="insertCustomerPermission" class="service.manage.corporatebank.CustomerPermission"
+			method="insertCustomerPermission">
+	</service>
+	<!-- 删除客户交易权限-->
+	<service name="deleteCustomerPermission" class="service.manage.corporatebank.CustomerPermission"
+			method="deleteCustomerPermission">
+	</service>
+	<!-- 客户账号查询客户名称-->
+	<service name="queryCustomerName" class="service.manage.corporatebank.CustomerPermission"
+			method="queryCustomerName">
+	</service>
+	
+</package>

@@ -1,0 +1,5 @@
+<package name="filter-serial" abstract="true">
+	<!-- 校验 filter -->
+	<filter name="SerialFilter"  class="service.common.filter.SerialFilter" scope="singleton">
+	</filter>
+</package>

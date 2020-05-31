@@ -1,0 +1,23 @@
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件-->
+<package name="man" namespace="communication" extends="filter-base.xml,filter-verify.xml">
+	<!-- 发送短信接口 -->
+	<service name="sendMsg" class="service.manage.stm.communication.AssistService" method="sendMsg">
+	</service>
+	<!-- 验密接口 -->
+	<service name="checkPwd" class="service.manage.stm.communication.AssistService" method="checkPwd">
+	</service>
+	<!-- 查询集中作业状态 -->
+	<service name="queryStatus" class="service.manage.stm.communication.CorporateBank" method="queryStatus">
+	</service>
+	<service name="printEpaper" class="service.manage.stm.communication.CorporateBank" method="printEpaper">
+	</service>
+	<!-- 集中作业交易撤销 -->
+	<service name="cancelApply" class="service.manage.stm.communication.CorporateBank" method="cancelApply">
+	</service>
+	<!-- 查询账户户名 -->
+	<service name="queryAcctName" class="service.manage.stm.communication.CoreService" method="queryAcctName">
+	</service>
+	<!-- 处理超时交易 -->
+	<service name="dealErrInfo" class="service.manage.stm.communication.CorporateBank" method="dealErrInfo">
+	</service>
+</package>

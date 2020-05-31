@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="corporateBusiness" extends="filter-base.xml,filter-serial.xml">
+	<!--密码校验-->
+	<service name="devcheckPaypassword" class="service.stm.corporateBusiness.CheckPaypassword" method="checkPaypassword">
+	</service>
+		
+    <!--回单卡验证-->
+	<service name="devcheckrReceiptCard" class="service.stm.corporateBusiness.ReceiptCardCheck" method="checkrReceiptCard">
+	</service>
+    
+	<!--查询打印-->
+	<service name="devprintQuery" class="service.stm.corporateBusiness.PrintQuery" method="query">
+	</service>
+	<!--更新查询打印次数-->
+	<service name="devupdatePrintNo" class="service.stm.corporateBusiness.PrintQuery" method="updatePrintNo">
+	</service>	
+	
+	<!--超柜对公账户单笔/批量存现-->
+	<service name="devcorporateSavings" class="service.stm.corporateBusiness.CorporateSavingsService" method="corporateSavings">
+	</service>
+	
+	<!--超柜经办人校验-->
+	<service name="devbranchCheck" class="service.stm.corporateBusiness.BranchCheckService" method="branchCheck">
+	</service>	
+	
+	<!--???-->
+	<service name="devgetPermissionByBranchNo" class="service.stm.corporateBusiness.BranchPermissionQuery" method="getPermissionByBranchNo">
+	</service>	
+	
+	<!--分录流水查询-->
+	<service name="devsqQuery" class="service.stm.corporateBusiness.SqNumberQueryService" method="sqQuery">
+	</service>
+	
+	<!--回单T+0文件上传分录流水查询-->
+	<service name="devhDUpload" class="service.stm.corporateBusiness.SqNumberQueryService" method="hDUpload">
+	</service>	
+	
+	<!--经办人信息查询-->
+	<service name="devqueryOperator" class="service.stm.corporateBusiness.EditorOperator" method="queryOperator">
+	</service>
+		
+	<!--经办人信息更新-->
+	<service name="devupdateOperator" class="service.stm.corporateBusiness.EditorOperator" method="updateOperator">
+	</service>	
+	
+	<!--票据清机查询-->
+	<service name="devgetCleanStatus" class="service.stm.corporateBusiness.DeviceCleanService" method="getCleanStatus">
+	</service>
+	
+	<!-- 机具票据受理状态查询 -->
+	<service name="devbillCleanStatusQuery" class="service.stm.corporateBusiness.DeviceCleanService" method="billCleanStatusQuery">
+	</service>
+	
+	
+	<!--票据清机更新-->
+	<service name="devupdateCleanStatus" class="service.stm.corporateBusiness.DeviceCleanService" method="updateCleanStatus">
+	</service>	
+	
+	<!--常用联系人信息查询-->
+	<service name="devqueryOppAcc" class="service.stm.corporateBusiness.EditorOperator" method="queryOppAcc">
+	</service>
+		
+	<!--常用联系人信息更新-->
+	<service name="devupdateOppAcc" class="service.stm.corporateBusiness.EditorOperator" method="updateOppAcc">
+	</service>	
+	<!--常用联系人信息删除-->
+	<service name="devdelOppAcc" class="service.stm.corporateBusiness.EditorOperator" method="delOppAcc">
+	</service>	
+	
+	<!-- 查询签收票据 -->
+	<service name="devqueryBillInfo" class="service.stm.corporateBusiness.QueryBillInfoService" method="queryBillInfo">
+	</service>
+	
+	<!-- 更新签收状态 -->
+	<service name="devupdateStatus" class="service.stm.corporateBusiness.UpdateStatusService" method="updateStatus">
+	</service>
+	
+	<!--对公签约申请 -->
+	<service name="devSignApplication" class="service.stm.corporateBusiness.SignApplicationService" method="SignApplication">
+	</service>
+	<!--对公申请查询 -->
+	<service name="devselectApplication" class="service.stm.corporateBusiness.SignApplicationService" method="selectApplication">
+	</service>
+	<!-- 查询前一工作日 -->
+	<service name="devqueryWorkDay" class="service.stm.corporateBusiness.QueryBillInfoService" method="queryWorkDay">
+	</service>
+</package>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="fund" extends="filter-base.xml,filter-serial.xml">
+
+	<!--基金购买-->
+	<service name="devfundBuy" class="service.stm.fund.FundService" method="fundBuy">
+	</service>
+	
+	<!--基金赎回-->
+	<service name="devfundRedeem" class="service.stm.fund.FundService" method="fundRedeem">
+	</service>
+	
+	<!--产品列表查询-->
+	<service name="devfundProdInfo" class="service.stm.fund.FundService" method="fundProdInfo">
+	</service>
+	
+	<!--基金风险等级评估-->
+	<service name="devfundRisk" class="service.stm.fund.FundService" method="fundRisk">
+	</service>
+	
+	<!--基金份额查询-->
+	<service name="devfundQuery" class="service.stm.fund.FundService" method="fundQuery">
+	</service>
+	
+	<!--基金产品列表查询-->
+	<service name="devfundProdInfo" class="service.stm.fund.FundService" method="fundProdInfo">
+	</service>
+	
+	<!--基金产品投资方向查询-->
+	<service name="devfundProdKindInfo" class="service.stm.fund.FundService" method="fundProdKindInfo">
+	</service>
+	
+	<!--基金风险等级匹配-->
+	<service name="devfundRiskMatch" class="service.stm.fund.FundService" method="fundRiskMatch">
+	</service>
+	
+	<!--基金定投-->
+	<service name="devfundFixedTime" class="service.stm.fund.FundService" method="fundFixedTime">
+	</service>
+	
+	<!--基金份额查询-->
+	<service name="devfundQuery" class="service.stm.fund.FundService" method="fundQuery">
+	</service>
+	
+	<!--基金净值查询-->
+	<service name="devfundValQuery" class="service.stm.fund.FundService" method="fundValQuery">
+	</service>
+	
+	<!--基金产品信息同步-->
+	<service name="devfundProdSync" class="service.stm.fund.FundService" method="fundProdSync">
+	</service>
+	
+	<!--基金解约-->
+	<service name="devfundCancel" class="service.stm.fund.FundService" method="fundCancel">
+	</service>
+	<!--基金开户-->
+	<service name="devfundOpenAcct" class="service.stm.fund.FundService" method="fundOpenAcct">
+	</service>
+	<!--基金销户-->
+	<service name="devfundCloseAcct" class="service.stm.fund.FundService" method="fundCloseAcct">
+	</service>
+	<!--基金撤单-->
+	<service name="devfundRevoke" class="service.stm.fund.FundService" method="fundRevoke">
+	</service>
+	<!--查询客户基金账户-->
+	<service name="devfundAcctQuery" class="service.stm.fund.FundService" method="fundAcctQuery">
+	</service>
+	
+	<!--查询客户基金信息-->  
+	<service name="devfundMsgQuery" class="service.stm.fund.FundService" method="fundMsgQuery">
+	</service>
+	<!--修改客户基金信息-->  
+	<service name="devfundModifyInfo" class="service.stm.fund.FundService" method="fundModifyInfo">
+	</service>
+	
+	<!--基金当日委托查询-->  
+	<service name="devfundWithdrawQuery" class="service.stm.fund.FundService" method="fundWithdrawQuery">
+	</service>
+	<!--基金TA信息查询-->  
+	<service name="devgetTAName" class="service.stm.fund.FundService" method="getTAName">
+	</service>
+</package>

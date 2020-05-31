@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="social" extends="filter-base.xml,filter-serial.xml,filter-verify.xml">
+	<!-- 校验参保状态-->
+	<service name="devcheckSocialStatus" class="service.stm.socialSecurity.ActiveCard" method="checkSocialStatus"/>
+	<!-- 社保信息查询返显-->
+	<service name="devsocialSecInfos" class="service.stm.socialSecurity.ActiveCard" method="socialSecInfos"/>
+	<!-- 公安照片同步-->
+	<service name="devsocialSecImg" class="service.stm.socialSecurity.ActiveCard" method="socialSecImg"/>
+	<!-- 社保卡申领-->
+	<service name="devsocialSecAct" class="service.stm.socialSecurity.ActiveCard" method="socialSecAct"/>
+	<!-- 社保回盘-->
+	<service name="devsocialSecRet" class="service.stm.socialSecurity.ActiveCard" method="socialSecRet"/>
+	<!-- 客户信息补录-->
+	<service name="devmodifyCustInfo" class="service.stm.socialSecurity.ActiveCard" method="modifyCustInfo"/>
+	<!-- 最小凭证查询-->
+	<service name="devvoucherQuery" class="service.stm.socialSecurity.ActiveCard" method="voucherQuery"/>
+	<!-- 账户激活-->
+	<service name="devcardActive" class="service.stm.socialSecurity.ActiveCard" method="cardActive"/>
+	
+	<!-- 社保卡即时开卡-->
+	<service name="devactivateCard" class="service.stm.socialSecurity.OpenCardService" method="activateCard"/>
+	<!-- 社保卡即时换卡 -->
+	<service name="devchangeCard" class="service.stm.socialSecurity.LocalLossOpenService" method="changeCard"/>
+	<!-- 社保卡信息验证 -->
+	<service name="devcardCustInfoChcek" class="service.stm.socialSecurity.ActiveCard" method="cardCustInfoChcek"/>
+	
+	<!-- 社保IC卡激活 -->
+	<service name="devinformIC" class="service.stm.socialSecurity.ActiveCard" method="informIC"/>
+	<!-- 社保卡写卡脚本通知 -->
+	<service name="devwriteCardNotice" class="service.stm.socialSecurity.ActiveCard" method="writeCardNotice"/>
+	
+	<!-- 社保卡补办 -->
+	<service name="devcardReplaceApply" class="service.stm.socialSecurity.LocalLossOpenService" method="cardReplaceApply"/>
+	<!-- 社保卡挂失补办 -->
+	<service name="devcardLossAndReplaceApply" class="service.stm.socialSecurity.LocalLossOpenService" method="cardLossAndReplaceApply"/>
+	
+	<!-- 社保卡卡挂失 -->
+	<service name="devsocialCardLost" class="service.stm.socialSecurity.LocalLossOpenService" method="socialCardLost"/>
+	
+	<!-- 社保申领-指纹授权 -->
+	<service name="devfingerprintImpower" class="service.stm.socialSecurity.ActiveCard" method="fingerprintImpower"/>
+	<!-- 社保卡-查询可扣款账户 -->
+	<service name="devfindLostAcctQuery" class="service.stm.socialSecurity.LocalLossOpenService" method="findLostAcctQuery"/>
+	
+	<!-- 新建客户信息 -->
+	<service name="devcreateCustInfo" class="service.stm.socialSecurity.ActiveCard" method="createCustInfo"/>
+	<!-- 查询客户信息 -->
+	<service name="devqueryCustInfo" class="service.stm.socialSecurity.ActiveCard" method="queryCustInfo"/>
+	<!-- 金融账户-卡挂失-->
+	<service name="devfinancialCardLost" class="service.stm.socialSecurity.FinancialLossService" method="financialCardLost"/>
+	<!-- 个人银行缴费参保查询-->
+	<service name="devfinancialPayInsuredQuery" class="service.stm.socialSecurity.FinancialPayService" method="financialPayInsuredQuery"/>
+	<!-- 个人银行城乡居民缴费查询-->
+	<service name="devpersonPayQuery" class="service.stm.socialSecurity.FinancialPayService" method="personPayQuery"/>
+	<!-- 个人银行城乡居民缴费-->
+	<service name="devpersonPay" class="service.stm.socialSecurity.FinancialPayService" method="personPay"/>
+	
+	<!-- 非税票据信息下载-->
+	<service name="devnonTaxQuery" class="service.stm.socialSecurity.nonTaxService" method="nonTaxQuery"/>
+	<!-- 非税缴款-->
+	<service name="devnoTaxPay" class="service.stm.socialSecurity.nonTaxService" method="noTaxPay"/>
+	
+	</package>

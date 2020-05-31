@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="activate" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+
+	<!--批量开卡新增密码 -->
+	<service name="devcardActive" class="service.stm.activate.ActivateService" method="cardActive"/>
+	
+	<!--存折激活(设定密码) -->
+	<service name="devdepositBookActivate" class="service.stm.activate.ActivateService" method="depositBookActivate"/>
+	
+	<!-- 通知IC卡激活 -->
+	<service name="devinformIc" class="service.stm.activateBankCard.ActivateCardService" method="informIC"/>
+	
+	<!-- 查询签发机关 -->
+	<service name="devselectIssuedName" class="service.stm.activateBankCard.ActivateCardService" method="selectIssuedName"/>
+	<!-- 查询签发机关 -->
+	<service name="devselectIssuedName1" class="service.stm.activateBankCard.ActivateCardService" method="selectIssuedName1"/>
+	
+	<!--信用卡基本信息查询-->
+	<service name="devAcctNoInfoQuery" class="service.stm.activate.MeiTuanActivateService" method="AcctNoInfoQuery"/>
+	
+	<!--信用卡账户锁定控制-->
+	<service name="devAcctNoLockControl" class="service.stm.activate.MeiTuanActivateService" method="AcctNoLockControl"/>
+	
+	<!--信用卡持卡人基本信息维护-->
+	<service name="devCustBaseInfoUpdate" class="service.stm.activate.MeiTuanActivateService" method="CustBaseInfoUpdate"/>
+	
+	<!--信用卡激活-->
+	<service name="devCardActive" class="service.stm.activate.MeiTuanActivateService" method="CardActive"/>
+
+	<!--信用卡密码设置-->
+	<service name="devPasswordManager" class="service.stm.activate.MeiTuanActivateService" method="PasswordManager"/>
+	
+	<!--信用卡密码修改-->
+	<service name="devPasswordUpdate" class="service.stm.activate.MeiTuanActivateService" method="PasswordUpdate"/>
+	
+	<!--信用卡卡列表查询-->
+	<service name="devCardListQuery" class="service.stm.activate.MeiTuanActivateService" method="CardListQuery"/>
+	
+	<!--11040 信用卡持卡人联系人信息维护-->
+	<service name="devCardholderContactUpdate" class="service.stm.activate.MeiTuanActivateService" method="CardholderContactUpdate"/>
+	<!--14090 信用卡密码设置(无纸化)-->
+	<service name="devPasswordManagerEpaper" class="service.stm.activate.MeiTuanActivateService" method="PasswordManagerEpaper"/>
+	<!--14091 信用卡密码修改(无纸化)-->
+	<service name="devPasswordUpdateEpaper" class="service.stm.activate.MeiTuanActivateService" method="PasswordUpdateEpaper"/>
+	
+	<!--1004_按卡号查询卡资料信息-->
+	<service name="devYinShuAcctNoInfoQuery" class="service.stm.activate.YinShuCreditCardService" method="YinShuAcctNoInfoQuery"/>
+	<!--2006_贷记卡系统_修改密码服务-->
+	<service name="devYinShuPasswordUpdateEpaper" class="service.stm.activate.YinShuCreditCardService" method="YinShuPasswordUpdateEpaper"/>
+	<!--2009_贷记卡系统_预借现金密码重置服务-->
+	<service name="devYinShuTradePasswordReplaceEpaper" class="service.stm.activate.YinShuCreditCardService" method="YinShuTradePasswordReplaceEpaper"/>
+	<!--2020_贷记卡系统_查询密码申请重置服务-->
+	<service name="devYinShuQueryPasswordReplaceEpaper" class="service.stm.activate.YinShuCreditCardService" method="YinShuQueryPasswordReplaceEpaper"/>
+	<!--2017_贷记卡系统_设置自动扣款-->
+	<service name="devYinShuSetAutoPay" class="service.stm.activate.YinShuCreditCardService" method="YinShuSetAutoPay"/>
+	<!--8003_贷记卡系统_信用卡还款-->
+	<service name="devYinShuRepay" class="service.stm.activate.YinShuCreditCardService" method="YinShuRepay"/>
+	<!--1086_贷记卡系统_信用卡未出账单查询-->
+	<service name="devYinShuWCBill" class="service.stm.activate.YinShuCreditCardService" method="YinShuWCBill"/>
+	<!-- 1005_贷记卡系统_信用卡账单查询-->
+	<service name="devYinShuBillQuery" class="service.stm.activate.YinShuCreditCardService" method="YinShuBillQuery"/>
+	<!--1054_贷记卡系统_信用卡历史账单查询-->
+	<service name="devYinShuHistoryBillQuery" class="service.stm.activate.YinShuCreditCardService" method="YinShuHistoryBillQuery"/>
+	<!--1055_贷记卡系统_历史账单明细查询-->
+	<service name="devYinShuHistoryBillQueryClear" class="service.stm.activate.YinShuCreditCardService" method="YinShuHistoryBillQueryClear"/>
+	<!--1085_贷记卡系统_信用卡账单明细查询-->
+	<service name="devYinShuBillClear" class="service.stm.activate.YinShuCreditCardService" method="YinShuBillClear"/>
+	<!--1001_贷记卡系统_信用卡账户查询-->
+	<service name="devYinShuAcctNoQuery" class="service.stm.activate.YinShuCreditCardService" method="YinShuAcctNoQuery"/>
+	
+	
+	<!--12010_贷记卡系统_已出账单查询-->
+	<service name="devqueryYCBill" class="service.stm.activate.MeiTuanActivateService" method="queryYCBill"/>
+	<!--12011_贷记卡系统_已出账单明细查询-->
+	<service name="devqueryYCBillClear" class="service.stm.activate.MeiTuanActivateService" method="queryYCBillClear"/>
+	<!--13060_贷记卡系统_未出账单查询-->
+	<service name="devqueryWCBill" class="service.stm.activate.MeiTuanActivateService" method="queryWCBill"/>
+	<!--12001_贷记卡系统_信用卡还款-->
+	<service name="devCCRepay" class="service.stm.activate.MeiTuanActivateService" method="CCRepay"/>
+	<!--12100_贷记卡系统_设置自扣还款-->
+	<service name="devTLSetAutoPay" class="service.stm.activate.MeiTuanActivateService" method="TLSetAutoPay"/>
+	
+	
+	</package>

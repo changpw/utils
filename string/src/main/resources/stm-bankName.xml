@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="pay" extends="filter-base.xml,filter-serial.xml">
+
+	<!--跨行网银行名行号同步-->
+	<service name="devebankNameAndNo" class="service.stm.pay.BankNameQueryService" method="ebankNameAndNo">
+	</service>
+	<!--行名行号同步-->
+	<service name="devbankNameAndNo" class="service.stm.pay.BankNameQueryService" method="bankNameAndNo">
+	</service>
+	
+	<!--行名行号查询-->
+	<service name="devbankNameAndNoQuery" class="service.stm.pay.BankNameQueryService" method="bankNameAndNoQuery">
+	</service>
+	
+	<!--常用联系人查询-->
+	<service name="devcontactsQuery" class="service.stm.pay.BankNameQueryService" method="contactsQuery">
+	</service>
+	
+	<!--城市代码查询-->
+	<service name="devcityCodeQuery" class="service.stm.pay.BankNameQueryService" method="cityCodeQuery">
+	</service>
+	
+	<!--清算行行号查询-->
+	<service name="devdrecCodeQuery" class="service.stm.pay.BankNameQueryService" method="drecCodeQuery">
+	</service>
+	
+	<!--清算行行名行号查询-->
+	<service name="devebankNameQuery" class="service.stm.pay.BankNameQueryService" method="ebankNameQuery">
+	</service>
+	<!--常用对公联系人查询-->
+	<service name="devcontactsQueryCompany" class="service.stm.pay.BankNameQueryService" method="contactsQueryCompany">
+	</service>
+</package>

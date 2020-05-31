@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--设备登录相关配置 --><package name="stm" namespace="voucher" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	
+	<!--获取凭证信息-->
+	<service name="devqueryVoucher" class="service.stm.voucher.VoucherManagerService" method="queryVoucher">
+	</service>
+	
+	<!--柜员领入凭证确认-->
+	<service name="devtellerConfirmVoucher" class="service.stm.voucher.VoucherManagerService" method="tellerConfirmVoucher">
+	</service>
+	
+	<!--装卡-->
+	<service name="devloadVoucher" class="service.stm.voucher.VoucherManagerService" method="loadVoucher">
+	</service>
+	
+	<!--凭证领入确认以及装卡-->
+	<service name="devconfirmAndLoadCard" class="service.stm.voucher.VoucherManagerService" method="confirmAndLoadCard">
+	</service>
+	
+	<!--凭证调整-->
+	<service name="devadjustVoucher" class="service.stm.voucher.VoucherManagerService" method="adjustVoucher">
+	</service>
+	
+	<!--在途凭证查询-->
+	<service name="devqueryVoucherNo" class="service.stm.voucher.VoucherManagerService" method="queryVoucherNo">
+	</service>
+	
+	<!--凭证上缴-->
+	<service name="devhandInVoucher" class="service.stm.voucher.VoucherManagerService" method="handInVoucher">
+	</service>
+	
+	<!--凭证查询-->
+	<service name="devvoucherQuery" class="service.stm.voucher.VoucherManagerService" method="voucherQuery">
+	</service>
+	<!--非卡凭证领入-->
+	<service name="devvoucherShowIn" class="service.stm.voucher.VoucherManagerService" method="voucherShowIn">
+	</service>
+	<!--凭证上缴-->
+	<service name="devvoucherTuen" class="service.stm.voucher.VoucherManagerService" method="voucherTuen">
+	</service>
+	<!--凭证在途查询-->
+	<service name="devvoucherPassQuery" class="service.stm.voucher.VoucherManagerService" method="voucherPassQuery">
+	</service>
+	
+	<!-- 查询卡箱详情 -->
+	<service name="devqueryCardBoxInfo" class="service.stm.util.CardBoxInfoService" method="queryCardBoxInfo"/>
+
+</package>

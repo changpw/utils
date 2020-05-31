@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="atm" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	
+	<!-- 卡分账户续存 -->	
+	<servcie name="saveMoneyWithoutCard" class="service.stm.atm.ATMService" method="saveMoneyWithoutCard"/>
+
+	<!-- 账户余额查询-->
+	<service name="devqueryBalance" class="service.stm.atm.ATMService" method="queryBalance">
+	</service>
+	
+	<!-- 钱箱加钞 -->
+	<service name="devboxAddMoney" class="service.stm.atm.ATMService" method="boxAddMoney"/>
+	
+	<!-- B2913 账户明细查询 -->
+	<servcie name="acctQueryDetail" class="service.stm.atm.AcctNoPrintService" method="acctQueryDetail"/>
+	
+	<!-- C4971 存款交易 -->
+	<servcie name="saveMoney" class="service.stm.atm.ATMService" method="saveMoney"/>
+	
+	<!-- C4952 取款交易 -->
+	<servcie name="withDrawal" class="service.stm.atm.ATMService" method="withDrawal"/>
+	
+	<!-- C4954 取款冲正 -->
+	<servcie name="drawCorrection" class="service.stm.atm.ATMService" method="drawCorrection"/>
+	
+	<!-- B2965 二三类账户额度查询 -->
+	<servcie name="limitQuery" class="service.stm.atm.ATMService" method="limitQuery"/>
+	
+	<!-- 钞箱清机 -->
+	<servcie name="boxClear" class="service.stm.atm.ATMService" method="boxClear"/>
+	
+	<!-- 修改或查询现金设备状态-->
+	<servcie name="updateQuery" class="service.stm.atm.ATMService" method="updateQuery"/>
+	
+	<!-- ATM钱箱查询-->
+	<servcie name="moneyBoxQuery" class="service.stm.atm.ATMService" method="moneyBoxQuery"/>
+	
+	<!-- 天天宝帐户资产查询 -->
+	<servcie name="queryAsset" class="service.stm.atm.ATMService" method="queryAsset"/>
+	<!-- 现金流水异常查询-->
+	<servcie name="cashErrQuery" class="service.stm.atm.ATMService" method="cashErrQuery"/>
+	
+</package>

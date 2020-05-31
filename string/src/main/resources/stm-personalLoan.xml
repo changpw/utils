@@ -1,0 +1,20 @@
+<package name="stm" namespace="perLoan" extends="filter-base.xml,filter-serial.xml">
+
+	<!-- 打印还款计划表 -->
+	<servcie name="printPlanOfRepaySheet" class="service.stm.personalLoan.PersonalLoan" method="printPlanOfRepaySheet"></servcie>
+	
+	<!-- 未结清借据查询 -->
+	<servcie name="debtQuery" class="service.stm.personalLoan.PersonalLoan" method="debtQuery"></servcie>
+	
+	<!-- 个人贷款还款书 -->
+	<servcie name="personLoan" class="service.stm.personalLoan.PersonalLoan" method="personLoan"></servcie>
+	
+	<!-- 打印公积金还款书 -->
+	<servcie name="accuFund" class="service.stm.personalLoan.PersonalLoan" method="accuFund"></servcie>
+	
+	<!-- B2909个人账户历史转账交易查询  -->
+	<servcie name="transferAcctQuery" class="service.stm.personalLoan.PersonalLoan" method="transferAcctQuery"></servcie>
+	
+	
+	
+</package>

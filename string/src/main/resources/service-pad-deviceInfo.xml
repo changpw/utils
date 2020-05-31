@@ -1,0 +1,6 @@
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件-->
+<package name="pad" namespace="deviceInfo" extends="filter-base.xml,filter-verify.xml">
+	<!-- 根据机构号查询设备状态 -->
+	<service name="getDeviceStatusByOrgId" class="service.pad.deviceMonitor.DeviceMonitorService" method="getDeviceStatusByOrgId">
+	</service>
+</package>

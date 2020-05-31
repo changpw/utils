@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="cardCancel" extends="filter-base.xml,filter-serial.xml">
+
+	<!-- 卡销户-利息试算 -->
+	<service name="devinterestTrial" class="service.stm.cardCancelAccount.CardCancelAccountService" method="interestTrial"/>
+	<!-- 卡销户-解约 -->
+	<service name="devcardSignCancel" class="service.stm.cardCancelAccount.CardSignCancelService" method="cardSignCancel"/>
+	<!-- 销津卡通卡 -->
+	<service name="devcardCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="cardCancel"/>
+	<!-- 银行卡挂失销卡 -->
+	<service name="devcardLossCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="cardLossCancel"/>
+	<!-- 储蓄卡销卡 -->
+	<service name="devsavingscardCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="savingscardCancel"/>
+	<!-- 储蓄卡挂失销卡 -->
+	<service name="devsavingscardLossCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="savingscardLossCancel"/>
+	<!-- 个人复合卡销卡 -->
+	<service name="devicCardCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="icCardCancel"/>
+	<!-- 未激活卡挂失销户 -->
+	<service name="devicCardUnActivatCancel" class="service.stm.cardCancelAccount.CardCancelAccountService" method="icCardUnActivatCancel"/>
+	<!-- 大额存单查询 -->
+	<service name="devqueryDeposits" class="service.stm.cardCancelAccount.CardCancelAccountService" method="queryDeposits"/>
+	<!-- 代发代扣关系查询 -->
+	<service name="devqueryCardRelationship" class="service.stm.cardCancelAccount.CardCancelAccountService" method="queryCardRelationship"/>
+	
+</package>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="service" namespace="screen" extends="filter-base.xml,filter-verify.xml">&gt;
+	<!--添加大屏设备 -->
+	<service name="devaddScreenDevice" class="service.manage.screenDevManage.deviceInfo.ScreenDevManage" method="addScreenDevice">
+	</service>
+	<!--删除大屏设备 -->
+	<service name="devdelScreenDevice" class="service.manage.screenDevManage.deviceInfo.ScreenDevManage" method="delScreenDevice">
+	</service>
+	<!--修改大屏设备 -->
+	<service name="devmodifyScreenDevice" class="service.manage.screenDevManage.deviceInfo.ScreenDevManage" method="modifyScreenDevice">
+	</service>
+	<!--增加节目配置 -->
+	<service name="devaddProgramConfig" class="service.manage.screenDevManage.deviceInfo.ProgramConfig" method="addProgramConfig">
+	</service>
+	<!--删除节目配置 -->
+	<service name="devdelProgramConfig" class="service.manage.screenDevManage.deviceInfo.ProgramConfig" method="delProgramConfig">
+	</service>
+	<!--修改节目配置 -->
+	<service name="devmodifyProgramConfig" class="service.manage.screenDevManage.deviceInfo.ProgramConfig" method="modifyProgramConfig">
+	</service>
+	
+	<!--修改分屏配置 -->
+	<service name="devmodifyScreenInfo" class="service.manage.screenDevManage.deviceInfo.StmScreenInfo" method="modifyScreenInfo">
+	</service>
+	<!--删除分屏配置 -->
+	<service name="devdelScreenInfo" class="service.manage.screenDevManage.deviceInfo.StmScreenInfo" method="delScreenInfo">
+	</service>
+	<!--增加分屏配置 -->
+	<service name="devaddScreenInfo" class="service.manage.screenDevManage.deviceInfo.StmScreenInfo" method="addScreenInfo">
+	</service>
+	
+	<!--查询所有的屏设备的信息 -->
+	<service name="devgetScreenInfoAll" class="service.manage.screenDevManage.deviceInfo.ScreenDevManage" method="getScreenInfoAll">
+	</service>
+	<!--查询所有的节目单号-->
+	<service name="devqueryProgramConfigInfo" class="service.manage.screenDevManage.deviceInfo.ProgramConfig" method="queryProgramConfigInfo">
+	</service>
+	<!--查询所有的资源信息-->
+	<service name="devqueryResourceInfo" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="queryResourceInfo">
+	</service>
+	<!--节目单号绑定资源信息-->
+	<service name="devbindPragremAndRecource" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="bindPragremAndRecource">
+	</service>
+	<!--节目单号解除绑定资源信息-->
+	<service name="devunbindPragremAndRecource" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="unbindPragremAndRecource">
+	</service>
+	<!--节目单号修改绑定资源信息-->
+	<service name="devModifyBindPragremAndRecource" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="ModifyBindPragremAndRecource">
+	</service>
+	<!--添加资源信息-->
+	<service name="devaddResourceInfo" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="addResourceInfo">
+	</service>
+	<!--删除资源信息-->
+	<service name="devdelResourceInfo" class="service.manage.screenDevManage.deviceInfo.ResourceInfo" method="delResourceInfo">
+	</service>
+</package>

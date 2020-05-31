@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="stmIssuedName" extends="filter-base.xml,filter-verify.xml">
+	<!-- 查询签发机关-->
+	<service name="devgetAllstmIssuedNameForDT" class="service.manage.stm.param.IssuedNameManage" method="getAllstmIssuedNameForDTss">
+	</service>
+	<!-- 添加签发机关-->
+	<service name="devaddstmIssuedName" class="service.manage.stm.param.IssuedNameManage" method="addstmIssuedName">
+	</service>
+	<!-- 修改签发机关-->
+	<service name="deveditstmIssuedName" class="service.manage.stm.param.IssuedNameManage" method="editstmIssuedName">
+	</service>
+	<!-- 删除签发机关-->
+	<service name="devdelstmIssuedName" class="service.manage.stm.param.IssuedNameManage" method="delstmIssuedName">
+	</service>
+</package>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="savings" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!-- 传统账户续存(存折) -->
+	<service name="devtraditionRenew" class="service.stm.savings.PassbookService" method="traditionRenew"/>
+	<!-- 传统账户支取(存折) -->
+	<service name="devtraditionWithdraw" class="service.stm.savings.PassbookService" method="traditionWithdraw"/>
+	<!-- 存折补登 -->
+	<service name="devpassbookSupplement" class="service.stm.savings.PassbookService" method="passbookSupplement"/>
+	<!-- 传统账户开户 -->
+	<service name="devtraditonOpenAcct" class="service.stm.savings.PassbookService" method="traditonOpenAcct"/>
+	<!-- 传统账户销户 -->
+	<service name="devtraditionCloseAcct" class="service.stm.savings.PassbookService" method="traditionCloseAcct"/>
+	<!-- 整整、通知部分提支 -->
+	<service name="devpartWihdraw" class="service.stm.savings.PassbookService" method="partWihdraw"/>
+	<!-- 单折挂失 -->
+	<service name="devsingleLossReport" class="service.stm.savings.PassbookService" method="singleLossReport">	
+	</service>
+	<!-- 单折挂失新开 -->
+	<service name="devsingleLossOpen" class="service.stm.savings.PassbookService" method="singleLossOpen">	
+	</service>
+	<!-- 存单利息试算 -->
+	<service name="devinterestTrial" class="service.stm.savings.PassbookService" method="interestTrial">	
+	</service>
+	<!-- 存单密码校验 -->
+	<service name="devcheckDepositPasswd" class="service.stm.savings.PassbookService" method="checkDepositPasswd">	
+	</service>
+	<!-- 挂失换存单收取手续费列表 -->
+	<service name="devselectBalance" class="service.stm.savings.PassbookService" method="selectBalance">
+	</service>
+	<!-- 查询凭证开头字母-->
+	<service name="devsingleQuery" class="service.stm.savings.PassbookService" method="singleQuery">
+	</service>
+	<!-- 凭证号查询存单信息 -->
+	<service name="devqueryCundan" class="service.stm.savings.PassbookService" method="queryCundan"/>
+	<!-- 收取手续费列表 -->
+	<service name="devselectBalanceEqual" class="service.stm.savings.PassbookService" method="selectBalanceEqual">
+	</service>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="oneNote" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!-- 一本通查询 -->
+	<service name="devoneNoteQuery" class="service.stm.oneNote.OneNoteService" method="oneNoteQuery"/>
+	<!-- 定期一本通存款 -->
+	<service name="devrenew" class="service.stm.oneNote.OneNoteService" method="renew"/>
+	<!-- 定期一本通取款 -->
+	<service name="devwithdraw" class="service.stm.oneNote.OneNoteService" method="withdraw"/>
+
+	<!-- 一本通补登 -->
+	<service name="devybtSupplement" class="service.stm.oneNote.OneNoteService" method="ybtSupplement"/>
+	
+	<!-- 定期一本通部分提支 -->
+	<service name="devpartWihdraw" class="service.stm.oneNote.OneNoteService" method="partWihdraw"/>
+	
+	</package>

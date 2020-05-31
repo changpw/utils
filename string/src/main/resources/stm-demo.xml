@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="local" namespace="test">
+	<service name="devTest" class="service.stm.demo.Demo" method="Test"/>
+</package>

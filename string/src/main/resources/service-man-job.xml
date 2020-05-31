@@ -1,0 +1,14 @@
+<package name="service" namespace="manJob" extends="filter-base.xml">
+	<!--同步跨行网银行名行号信息 -->
+	<service name="ebankNameAndNo" class="service.stm.job.SingleImplement" method="ebankNameAndNo"></service>
+	<!--同步行名行号信息 -->
+	<service name="bankNameAndNo" class="service.stm.job.SingleImplement" method="bankNameAndNo"></service>
+	<!--更新ESB路由表-->
+	<service name="loadEsbRoute" class="service.stm.job.SingleImplement" method="loadEsbRoute"></service>
+	<!-- 挂失数据更改 -->
+	<service name="updataNum" class="service.stm.comm.UpdateLossService" method="updataNum"></service>
+	<!--更新人脸识别路由表-->
+	<service name="loadRlsbRoute" class="service.stm.job.SingleImplement" method="loadRlsbRoute"></service>	
+	<!--更新公共参数-->
+	<service name="loadConfig" class="service.stm.job.SingleImplement" method="loadConfig"></service>	
+</package>

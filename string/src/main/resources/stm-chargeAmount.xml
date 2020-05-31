@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="util" extends="filter-base.xml,filter-serial.xml">
+
+	<!--手续费-->
+	<service name="devgetServiceCharge" class="service.stm.util.ChargeAmountService" method="getServiceCharge">
+	</service>
+	
+</package>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="pay">
+	<!-- 转账:二代接口服务-->
+	<service name="devpayoftranslation" class="service.stm.pay.PayService" method="payoftranslation"/>
+	<!-- 转账:超级网银接口服务-->
+	<service name="devpayoftranslation2" class="service.stm.pay.PayService" method="payoftranslation2"/>
+	<!-- 转账:活期账户间转账（行内）-->
+	<service name="devpayoftranslation3" class="service.stm.pay.PayService" method="payoftranslation3"/>
+    <!-- 转账:活期账户间转账（行内）-->
+	<service name="devpayoftranslation4" class="service.stm.pay.PayService" method="payoftranslation4"/>
+    <!-- 转账:二代延时撤销-->
+    <service name="devpayofCancel1" class="service.stm.pay.PayService" method="payofCancel1"/>
+    <!-- 转账:二代延时撤销查询-->
+	<service name="devpayofCancel2" class="service.stm.pay.PayService" method="payofCancel2"/>
+    <!-- 转账:核心延时撤销查询-->
+	<service name="devCancellistofcorepay" class="service.stm.pay.PayService" method="Cancellistofcorepay"/>
+	<!-- 转账:核心延时转账-->
+	<service name="devpaydelaytransfercore" class="service.stm.pay.PayService" method="paydelaytransfercore"/>
+	
+	<service name="devspellMap" class="service.stm.pay.PayService" method="spellMap"/>
+	<!-- 个人转对公 核心 B2119-->
+	<service name="devpersonToCorporate" class="service.stm.pay.PayService" method="personToCorporate"/>
+</package>

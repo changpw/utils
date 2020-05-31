@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="change" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--卡密码修改 -->
+	<service name="devcardPwdChange" class="service.stm.change.ModifyService" method="cardPwdChange"/>
+	
+	<!--折密码修改 -->
+	<service name="devdepositBookPwdChange" class="service.stm.change.ModifyService" method="depositBookPwdChange"/>
+	
+	<!-- 密码状态查询-->
+	<service name="devpasswordQuery" class="service.stm.change.ModifyService" method="passwordQuery"/>
+	
+	<!-- 密码挂失-->
+	<service name="devpasswordLoss" class="service.stm.change.ModifyService" method="passwordLoss"/>
+	
+	<!-- 密码重置-->
+	<service name="devpasswordReset" class="service.stm.change.ModifyService" method="passwordReset"/>
+	<!-- 密码错误次数查询-->
+	<service name="devpassErrorNum" class="service.stm.change.ModifyService" method="passErrorNum"/>
+</package>

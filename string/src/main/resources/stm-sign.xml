@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--签约管理相关配置     filter-auth.xml--><package name="stm" namespace="sign" extends="filter-base.xml,filter-serial.xml">
+	<!--统一签约-->
+	<service name="devsign" class="service.stm.sign.SignService" method="sign"/>
+	
+	<!--签约信息修改-->
+	<service name="devsignUpdate" class="service.stm.sign.SignUpdateService" method="signUpdate"/>
+	
+	<!--签约信息查询-->
+	<service name="devsignQuery" class="service.stm.sign.SignQueryService" method="signQuery"/>
+	
+	<!--签约菜单查询-->
+	<service name="devsignMenuQuery" class="service.stm.sign.SignQueryService" method="signMenuQuery"/>
+	
+	<!--签约信息解约-->
+	<service name="devsignCancel" class="service.stm.sign.SignCancelService" method="signCancel"/>
+	
+	<!--根据机构查询查证表-->
+	<service name="devcheckQuery" class="service.stm.sign.CheckQueryService" method="checkQuery"/>
+	
+	<!--根据账号、核心流水号、渠道号查证是否签约解约-->
+	<service name="devcheckResult" class="service.stm.sign.CheckQueryService" method="checkResult"/>
+	
+	<!--前端上送签约失败时的无纸化流水-->
+	<service name="devcheckUpdate" class="service.stm.sign.CheckQueryService" method="checkUpdate">	</service>
+
+	<!-- 零钱宝天天宝签约 -->
+	<service name="devsignPocketMoney" class="service.stm.sign.PocketMoneyService" method="signPocketMoney"/>
+	
+	<!-- 零钱宝天天宝签约查询 -->
+	<service name="devsignPocketMoneyQuery" class="service.stm.sign.PocketMoneyService" method="signPocketMoneyQuery"/>
+	
+	<!-- 天天宝帐户签约校验 -->
+	<service name="devsignCheck" class="service.stm.sign.PocketMoneyService" method="signCheck"/>
+	
+	<!-- 宝类解约 -->
+	<service name="devcancelPocketMoney" class="service.stm.sign.PocketMoneyService" method="cancelPocketMoney"/>
+	
+	<!-- 宝类账户解约校验 -->
+	<service name="devcheckPocketMoney" class="service.stm.sign.PocketMoneyService" method="checkPocketMoney"/>
+	
+	<!-- 核心签约业务 -->
+	<service name="devCoreSign" class="service.stm.sign.SignService" method="CoreSign"/>
+	
+	<!-- 预约开卡签约 -->
+	<service name="devsignForBook" class="service.stm.sign.SignService" method="signForBook"/>
+</package>

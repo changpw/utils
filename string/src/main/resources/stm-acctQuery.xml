@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="acctQuery" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	
+	<!-- 本人授权-->
+	<service name="devvoucherQuery" class="service.stm.acctQuery.AuthorizeService" method="voucherQuery"/>
+	
+</package>

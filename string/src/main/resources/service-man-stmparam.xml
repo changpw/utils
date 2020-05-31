@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="man" namespace="paramstm" extends="filter-base.xml,filter-verify.xml">
+<!-- 设备支持业务菜单管理交易配置文件 -->
+	<!-- 增加菜单配置 -->
+	<service name="devaddBusiParam" class="service.manage.stm.param.BusiParamManage" method="add">
+	</service>
+	<!-- 修改菜单配置 -->
+	<service name="devmodifyBusiParam" class="service.manage.stm.param.BusiParamManage" method="modify">
+	</service>
+	<!-- 删除菜单配置 -->
+	<service name="devdelBusiParam" class="service.manage.stm.param.BusiParamManage" method="del">
+	</service>
+
+<!-- 业务菜单管理交易配置文件 -->
+	<!-- 查询所有树形菜单 -->
+	<service name="devqueryBusiMenu" class="service.manage.stm.param.BusiMenuManage" method="query">
+	</service>
+	<!-- 增加子节点 -->
+	<service name="devaddBusiMenu" class="service.manage.stm.param.BusiMenuManage" method="add">
+	</service>
+	<!-- 修改节点 -->
+	<service name="devmodifyBusiMenu" class="service.manage.stm.param.BusiMenuManage" method="modify">
+	</service>
+	<!-- 删除节点 -->
+	<service name="devdelBusiMenu" class="service.manage.stm.param.BusiMenuManage" method="del">
+	</service>
+	
+<!-- 设备支持业务菜单管理交易配置文件 -->
+	<!-- 查询所有树形菜单 -->
+	<service name="devqueryDeviceMenuById" class="service.manage.stm.param.DeviceMenuManage" method="queryById">
+	</service>
+	<!-- 修改节点 -->
+	<service name="devupdateDeviceMenu" class="service.manage.stm.param.DeviceMenuManage" method="update">
+	</service>
+	
+	
+
+<!-- 添加常用收款行-->
+	<service name="devaddstmComebank" class="service.manage.stm.param.StmComebank" method="addstmComebank">
+	</service>
+	<!-- 修改常用收款行-->
+	<service name="deveditstmComebank" class="service.manage.stm.param.StmComebank" method="editstmComebank">
+	</service>
+	<!-- 删除常用收款行-->
+	<service name="devdelstmComebank" class="service.manage.stm.param.StmComebank" method="delstmComebank">
+	</service>
+	
+	
+	<!-- 添加获客渠道-->
+	<service name="devaddCustomerChannel" class="service.manage.stm.param.CustomerChannel" method="addCustomerChannel">
+	</service>
+	<!-- 修改获客渠道-->
+	<service name="deveditCustomerChannel" class="service.manage.stm.param.CustomerChannel" method="editCustomerChannel">
+	</service>
+	<!-- 删除获客渠道-->
+	<service name="devdelCustomerChannel" class="service.manage.stm.param.CustomerChannel" method="delCustomerChannel">
+	</service>
+	<!-- 查询获客渠道-->
+	<service name="devgetCustomerChannel" class="service.manage.stm.param.CustomerChannel" method="getCustomerChannel">
+	</service>
+	
+<!-- 转账手续费-->
+	<!-- 添加转账手续费 -->
+	<service name="devaddChargeRate" class="service.manage.stm.param.ChargeRate" method="addChargeRate">
+	</service>
+	<!-- 修改转账手续费 -->
+	<service name="devrewriteChargeRate" class="service.manage.stm.param.ChargeRate" method="rewriteChargeRate">
+	</service>
+	<!-- 删除转账手续费 -->
+	<service name="devdelChargeRate" class="service.manage.stm.param.ChargeRate" method="delChargeRate">
+	</service>
+	
+	<!-- 处理日历文件 -->
+	<service name="devdealFile" class="service.manage.stm.corporatebank.HolidaysManage" method="dealFile">
+	</service>
+	<!-- 获取地区-->
+	<service name="devgetAreaName" class="service.manage.stm.param.StmCundanHeader" method="getAreaName">
+	</service>
+	<!-- 获取存单头 -->
+	<service name="devgetCundanHeader" class="service.manage.stm.param.StmCundanHeader" method="getCundanHeader">
+	</service>
+	<!-- 删除存单头 -->
+	<service name="devdelCundanHeader" class="service.manage.stm.param.StmCundanHeader" method="delCundanHeader">
+	</service>
+	<!-- 添加存单头信息 -->
+	<service name="devaddCundanHeader" class="service.manage.stm.param.StmCundanHeader" method="addCundanHeader">
+	</service>
+	
+		<!-- 添加风险评估问卷配置-->
+	<service name="devaddStmRiskQuestion" class="service.manage.stm.param.StmRiskQuestion" method="addStmRiskQuestion">
+	</service>
+	<!-- 修改风险评估问卷配置-->
+	<service name="deveditStmRiskQuestion" class="service.manage.stm.param.StmRiskQuestion" method="editStmRiskQuestion">
+	</service>
+	<!-- 删除风险评估问卷配置-->
+	<service name="devdelStmRiskQuestion" class="service.manage.stm.param.StmRiskQuestion" method="delStmRiskQuestion">
+	</service>
+		<!-- 添加风险评估问卷配置-->
+	<service name="devaddStmRiskAnswer" class="service.manage.stm.param.StmRiskAnswer" method="addStmRiskAnswer">
+	</service>
+	<!-- 修改风险评估问卷配置-->
+	<service name="deveditStmRiskAnswer" class="service.manage.stm.param.StmRiskAnswer" method="editStmRiskAnswer">
+	</service>
+	<!-- 删除风险评估问卷配置-->
+	<service name="devdelStmRiskAnswer" class="service.manage.stm.param.StmRiskAnswer" method="delStmRiskAnswer">
+	</service>
+</package>

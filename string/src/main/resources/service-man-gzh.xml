@@ -1,0 +1,5 @@
+<package name="service" namespace="gzh" extends="filter-base.xml">
+	<!--冠字号压缩包解压 -->
+	<service name="gzhzip" class="service.manage.stm.gzh.GzhService" method="zip"></service>
+	
+</package>

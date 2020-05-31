@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="man" namespace="stmComebank" extends="filter-base.xml,filter-verify.xml">
+	<!-- 添加常用收款行-->
+	<service name="devaddstmComebank" class="service.manage.stm.param.StmComebank" method="addstmComebank">
+	</service>
+	<!-- 修改常用收款行-->
+	<service name="deveditstmComebank" class="service.manage.stm.param.StmComebank" method="editstmComebank">
+	</service>
+	<!-- 删除常用收款行-->
+	<service name="devdelstmComebank" class="service.manage.stm.param.StmComebank" method="delstmComebank">
+	</service>
+</package>

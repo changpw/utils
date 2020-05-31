@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--开卡相关配置     filter-auth.xml--><package name="stm" namespace="activateBankCard" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--开卡 IA001 -->
+	<service name="devActivateCard" class="service.stm.activateBankCard.ActivateCardService" method="ActivateCard">
+	</service>
+	
+	<!--写卡脚本通知 IA006 -->
+	<service name="devWriteCardNotice" class="service.stm.activateBankCard.ActivateCardService" method="WriteCardNotice">
+	</service>
+	
+	<!--客户签字 -->
+	<service name="devCustSign" class="service.stm.activateBankCard.PaperService" method="CustSign">
+	</service>
+	
+	<!--卡信息管理 -->
+	<service name="devcardManager" class="service.stm.activateBankCard.ActivateCardService" method="cardManager">
+	</service>
+	
+</package>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--继承的名字是文件名,继承的文件必须为abstract为true的文件--><package name="service" namespace="ywqx" extends="filter-base.xml,filter-verify.xml">&gt;
+	<!--添加账号信息 -->
+	<service name="devaddAccNoOInfo" class="service.manage.stm.ywqxManage.AccountTradeManage" method="addAccNoOInfo">
+	</service>
+	<!--删除账号信息 -->
+	<service name="devdelAccNoInfo" class="service.manage.stm.ywqxManage.AccountTradeManage" method="delAccNoInfo">
+	</service>
+	<!--修改账号信息 -->
+	<service name="devmodifyAccNoInfo" class="service.manage.stm.ywqxManage.AccountTradeManage" method="modifyAccNoInfo">
+	</service>
+	<!--添加账号和交易权限映射 -->
+	<service name="devaddAccNoTradeMappingInfo" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="addAccNoTradeMappingInfo">
+	</service>
+	<!--删除账号和交易权限映射 -->
+	<service name="devdelAccNoTradeMappingInfo" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="delAccNoTradeMappingInfo">
+	</service>
+	<!--修改账号和交易权限映射 -->
+	<service name="devmodifyAccNoTradeMappingInfo" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="modifyAccNoTradeMappingInfo">
+	</service>
+	<!--查询对应业务交易ID和交易名称-->
+	<service name="devqueryStmMenu" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="queryStmMenu">
+	</service>
+	<!--添加对应业务交易ID和交易名称-->
+	<service name="devaddAccAndMapping" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="addAccAndMapping">
+	</service>
+	<!--查询对应业务交易ID和交易名称-->
+	<service name="devgetAccAndMapping" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="getAccAndMapping">
+	</service>
+	<!--修改对应业务交易ID和交易名称-->
+	<service name="deveditAccAndMapping" class="service.manage.stm.ywqxManage.AccNoTradeMapping" method="editAccAndMapping">
+	</service>
+</package>

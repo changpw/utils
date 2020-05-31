@@ -1,0 +1,4 @@
+<package name="stm" namespace="etr" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+    <!-- 109307我的理财查询  -->
+	<servcie name="myEntrustQuery" class="service.stm.fin.MyProductService" method="myEntrustQuery"></servcie>
+</package>

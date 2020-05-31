@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="comm" extends="filter-base.xml,filter-serial.xml">
+	<!--校验卡/折状态 -->
+	<service name="devcheckCardStatus" class="service.stm.comm.CommTradeService" method="checkCardStatus"/>
+	
+	<!--卡/折密码校验 -->
+	<service name="devcheckCardPasswd" class="service.stm.comm.CommTradeService" method="checkCardPasswd"/>
+	
+	<!--根据卡号/折号查客户信息 -->
+	<service name="devselectUserByCardNo" class="service.stm.comm.CommTradeService" method="selectUserByCardNo"/>
+	
+	<!--无纸化通用-->
+	<service name="devpaperComm" class="service.stm.activateBankCard.PaperService" method="paperComm"/>
+	<!--无纸化通用-->
+	<service name="devsigleProEpaper" class="service.stm.activateBankCard.PaperService" method="sigleProEpaper"/>
+	<service name="devfinInfoLoad" class="service.stm.fin.ProductInfoLoad" method="finInfoLoad"/>
+	
+	<!-- 账户签约信息查询 -->
+	<service name="devsignInfoQueryByAcctNo" class="service.stm.comm.CommTradeService" method="signInfoQueryByAcctNo"/>
+	
+	<!-- 卡安全验证 -->
+	<service name="devverifyCardSafty" class="service.stm.comm.CommTradeService" method="verifyCardSafty"/>
+	
+	<!-- B5100 批量账户户名查询 -->
+	<service name="devacctNameQuery" class="service.stm.comm.CommTradeService" method="acctNameQuery"/>
+	
+	<!-- 机具票据受理状态查询 -->
+	<service name="devbillCleanStatusQuery" class="service.stm.comm.CommTradeService" method="billCleanStatusQuery"/>
+
+	<!-- 查询当日存取金额 -->
+	<service name="devqueryBalance" class="service.stm.comm.CashBillService" method="queryBalance"/>
+	
+	<!-- 查询钞箱流水 -->
+	<service name="devqueryMoneyBox" class="service.stm.comm.CashBillService" method="queryMoneyBox"/>
+	
+	<!-- 记录钱箱变化 -->
+	<service name="devrecordBoxSerial" class="service.stm.comm.CashBillService" method="recordBoxSerial"/>
+	
+	<!-- 挂失数据查询 -->
+	<service name="devselectUser" class="service.stm.comm.InsertLossData" method="selectUser"/>
+	
+	<!-- 查询系统时间 -->
+	<service name="devgetSystemTime" class="service.stm.comm.CommTradeService" method="getSystemTime"/>
+	
+	<!-- 获取现金交易相关信息 -->
+	<service name="devgetCashComstomer" class="service.stm.comm.CommTradeService" method="getCashComstomer"/>
+	
+	<!-- 申请流水号 -->
+	<service name="devapplySerialM" class="service.stm.comm.CommTradeService" method="applySerialM"/>
+</package>

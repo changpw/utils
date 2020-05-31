@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="stm" namespace="manipulate" extends="filter-base.xml,filter-serial.xml,filter-auth.xml">
+	<!--II\III类账户控制信息查询 -->
+	<service name="devacctManipulate" class="service.stm.manipulate.AcctManipulateService" method="acctManipulate"/>
+	
+	<!--II\III类账户绑定设置 -->
+	<service name="devacctBinding" class="service.stm.manipulate.AcctManipulateService" method="acctBinding"/>
+	
+	
+</package>
