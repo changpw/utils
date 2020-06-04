@@ -1,74 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cf00a08-693a-46b4-92e7-7d6dc0e0ad4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/filter-auth.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/filter-base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/filter-serial.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/filter-verify.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-corporate-permission.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-communication.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-download.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-gzh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-job.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-query.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmBranchLimit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmComebank.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmHsmInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmIssuedName.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmbillInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmdevice.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmmonitor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmparam.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-stmteller.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-man-zip.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-pad-deviceInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-screen-stmScreen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/service-ywqx-stmYwqx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-account.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-acctQuery.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-activate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-activateBankCard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-assistTools.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-atm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-bankAndSecurities.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-bankName.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-cardCancelAccount.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-cardManage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-cash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-centOperation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-change.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-chargeAmount.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-comm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-corporateBusiness.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-corporateWorkdate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-crownnumber.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-custInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-demo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-deposit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-entrn.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-fin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-fund.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-ios-login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-lock.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-manipulate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-oldHouseCard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-oneNote.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-passwordCardManage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-pay.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-personalLoan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-pocketRedeem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-risk.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-savings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-sign.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-social.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-splitting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string/src/main/resources/stm-voucher.xml" afterDir="false" />
+    <list default="true" id="3cf00a08-693a-46b4-92e7-7d6dc0e0ad4b" name="Default Changelist" comment="t">
+      <change afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comm/src/main/java/com/cpw/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/comm/src/main/java/com/cpw/exception/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/src/main/java/Exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/string/src/main/java/Exception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/string/src/main/java/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/string/src/main/java/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/string/src/main/java/StringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+            <state relative-caret-position="19">
+              <caret line="219" column="56" selection-start-line="219" selection-start-column="56" selection-end-line="219" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,41 +33,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-change.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-bankName.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-assistTools.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-centOperation.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-cardCancelAccount.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/string/src/main/resources/service-man-stmbillInfo.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="57">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/string/src/main/JsonText.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -150,6 +73,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>readXMLFiles</find>
+      <find>incomeRate</find>
+      <find>prdValue</find>
+      <find>useVol</find>
+      <find>cost</find>
+      <find>vol</find>
+      <find>benckmarkInfo</find>
+      <find>modelComment</find>
+      <find>jsonArray</find>
+      <find>conversStringJSON</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,7 +106,6 @@
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/comm/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/comm/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/comm/src/main/java/com/cpw/entry/Person.java" />
         <option value="$PROJECT_DIR$/string/src/main/resources/application.properties" />
@@ -182,7 +113,11 @@
         <option value="$PROJECT_DIR$/string/src/main/java/Exception.java" />
         <option value="$PROJECT_DIR$/comm/src/main/java/com/cpw/exception/MyException.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/JsonText.json" />
+        <option value="$PROJECT_DIR$/map.txt" />
+        <option value="$PROJECT_DIR$/string/src/main/JsonText.json" />
         <option value="$PROJECT_DIR$/string/src/main/java/StringTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -231,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,33 +191,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -291,7 +203,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590838258693" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591230502525" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -414,6 +326,10 @@
       <workItem from="1589439281033" duration="52000" />
       <workItem from="1590821227164" duration="1368000" />
       <workItem from="1590826451737" duration="4771000" />
+      <workItem from="1590996988091" duration="1000000" />
+      <workItem from="1591173870304" duration="1005000" />
+      <workItem from="1591191762767" duration="10130000" />
+      <workItem from="1591230362354" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="init demo workspace by maven">
       <created>1584257988414</created>
@@ -489,7 +405,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48260000" />
+    <option name="totallyTimeSpent" value="60531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,7 +420,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.29490617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.31099194" />
       <window_info id="Structure" order="1" sideWeight="0.5028329" side_tool="true" weight="0.2546917" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -521,7 +437,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32719547" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3286119" />
@@ -602,23 +518,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/string/src/main/java/StringTest.java</url>
-          <line>162</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/string/src/main/java/StringTest.java</url>
+          <line>281</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/string/src/main/java/PersonBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/string/src/main/java/PersonInstanceBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/string/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -780,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -911,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/maven-repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/tree/AbstractElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -932,9 +831,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-comm1.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-comm1.xml" />
     <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-comm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -944,19 +841,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-voucher.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string/src/main/resources/service-man-stmbillInfo.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string/src/main/java/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-change.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -972,6 +856,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/string/src/main/resources/stm-cardCancelAccount.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string/src/main/resources/service-man-stmbillInfo.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonText.json" />
+    <entry file="file://$PROJECT_DIR$/string/src/main/java/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="219" column="56" selection-start-line="219" selection-start-column="56" selection-end-line="219" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string/src/main/JsonText.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

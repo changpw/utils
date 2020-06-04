@@ -1,4 +1,6 @@
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.cpw.entry.Person;
 import com.cpw.exception.MyException;
 import lombok.ToString;
@@ -13,10 +15,18 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class StringTest {
+    public static JSONArray jsonArray=new JSONArray() ;
+    public  static JSONObject jsonTotleObject=new JSONObject();
     public static void main(String[] args) throws java.lang.Exception {
-        readXMLFiles();
+        MapConverJson();
+//        readXMLFiles();
 //        changeXMLPropertise();
-        System.out.println("Hello");
+//        System.out.println("Hello");
+        String name="9602FTC100000118";
+        System.out.println(name.length());
+        System.out.println(name.substring(0));
+        System.out.println(name.substring(0,7));
+        System.out.println(name.substring(7,15));
 //         String 是不可变对象
 //        String str = "1232235";
 //      不可变对象的解决方法
@@ -159,50 +169,119 @@ public class StringTest {
 //            return ordinal()+"\tis\t"+name();
 //        }
 //    }
-        public static  void  readXMLFiles(){
-            File file = new File("E:\\demo\\string\\src\\main\\resources");
-            String[] fileNames = file.list();
-            for(String fileName : fileNames){
-                System.out.println(fileName);
-                if(fileName.indexOf("stm") !=-1){
-                    System.out.println("stm-->"+fileName);
-                    changeXMLPropertise(fileName);
-
-                }else {
-                    System.out.println(fileName);
-                }
+//        public static  void  readXMLFiles(){
+//            File file = new File("E:\\demo\\string\\src\\main\\resources");
+//            String[] fileNames = file.list();
+//            for(String fileName : fileNames){
+//                System.out.println(fileName);
+//                if(fileName.indexOf("stm") !=-1){
+//                    System.out.println("stm-->"+fileName);
+//                    changeXMLPropertise(fileName);
+//
+//                }else {
+//                    System.out.println(fileName);
+//                }
+//            }
+//
+//
+//        }
+//        public static  void  changeXMLPropertise(String fileName){
+//
+//            SAXReader saxReader = new SAXReader();
+//            try {
+//                Document read = saxReader.read(new File("E:\\demo\\string\\src\\main\\resources\\"+fileName));
+//                Element rootElement = read.getRootElement();
+//                List service = rootElement.elements("service");
+//                Iterator iterator = service.iterator();
+//                while (iterator.hasNext()){
+//                    Element next = (Element) iterator.next();
+//                    String name = next.attribute("name").getText();
+//                    next.attribute("name").setText("dev"+name);
+//                    System.out.println(next.attribute("name").getText());
+//                    try {
+//                        XMLWriter xmlWriter = new XMLWriter(new FileWriter("E:\\demo\\string\\src\\main\\resources\\"+fileName));
+//                        xmlWriter.write(read);
+//                        xmlWriter.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            } catch (DocumentException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//读文件并将数组和对象调用不同方法
+    public  static  void  MapConverJson(){
+        String filePath="./map.txt";
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
+            String s="";
+            StringBuffer sb= new StringBuffer();
+            while ((s=bufferedReader.readLine())!=null){
+                sb.append(s);
             }
-
-
-        }
-        public static  void  changeXMLPropertise(String fileName){
-
-            SAXReader saxReader = new SAXReader();
-            try {
-                Document read = saxReader.read(new File("E:\\demo\\string\\src\\main\\resources\\"+fileName));
-                Element rootElement = read.getRootElement();
-                List service = rootElement.elements("service");
-                Iterator iterator = service.iterator();
-                while (iterator.hasNext()){
-                    Element next = (Element) iterator.next();
-                    String name = next.attribute("name").getText();
-                    next.attribute("name").setText("dev"+name);
-                    System.out.println(next.attribute("name").getText());
-                    try {
-                        XMLWriter xmlWriter = new XMLWriter(new FileWriter("E:\\demo\\string\\src\\main\\resources\\"+fileName));
-                        xmlWriter.write(read);
-                        xmlWriter.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            } catch (DocumentException e) {
-                e.printStackTrace();
+            //控制调用相应的方法
+            if(false){
+                conversStringJSON(sb.toString(),0);
+                System.out.println("conversStringJSON");
+            }else {
+                System.out.println("getMapArr");
+                getMapArr(sb.toString());
             }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
+    }
+    // 将map转换为json
+    public static  void conversStringJSON(String mapString,int length) throws IOException {
+        //输出map
+        System.out.println(mapString);
+        mapString.trim();
+        HashMap<String, Object> stringHashMap = new HashMap<>();
+        //将map去除首位的{}；
+        if(mapString.startsWith("{")){
+            mapString = mapString.substring(1, mapString.length() - 1);
+            System.out.println("start with {"+mapString);
+        }
+        String[] pairJson = mapString.split(",");
+        for(String str :pairJson){
+            String[] split = str.split("=");
+            stringHashMap.put(split[0].trim(),split[1].trim());
+        }
+        System.out.println(stringHashMap.toString());
+        if(length>=1){
+            JSONObject json = new JSONObject(stringHashMap);
+            jsonArray.add(json);
+            jsonTotleObject.put("LIST",jsonArray);
+        }else {
+            JSONObject json = new JSONObject(stringHashMap);
+            jsonTotleObject.putAll(json);
+        }
+
+        System.out.println(jsonTotleObject.toJSONString());
+        String jsonString=jsonTotleObject.toJSONString();
+        writeJsonFile(jsonString);
+    }
+    //写文件
+    public static  void writeJsonFile(String jsonString) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("E:\\demo\\string\\src\\main\\JsonText.json"));
+        bufferedWriter.write(jsonString);
+        bufferedWriter.flush();
+        bufferedWriter.close();
+    }
+    //获得数组的json数据
+    public static void getMapArr(String arrString) throws IOException {
+        String newArrString = arrString.substring(2, arrString.length() - 2).trim();
+        //数组中的},{必须紧挨
+        String[] split = newArrString.split("\\},\\{");
+        for(String str:split){
+            conversStringJSON(str,split.length);
+        }
 
 
-
+    }
 }
